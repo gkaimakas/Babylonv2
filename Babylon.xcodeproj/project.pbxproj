@@ -43,6 +43,12 @@
 		13CA3D3722C52D59000F6D37 /* ProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D3622C52D59000F6D37 /* ProviderError.swift */; };
 		13CA3D3922C52D61000F6D37 /* LocalProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D3822C52D61000F6D37 /* LocalProviderError.swift */; };
 		13CA3D3B22C52D69000F6D37 /* RemoteProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D3A22C52D69000F6D37 /* RemoteProviderError.swift */; };
+		13CA3D3F22C52EA6000F6D37 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D3E22C52EA6000F6D37 /* Address.swift */; };
+		13CA3D4122C52EC0000F6D37 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D4022C52EC0000F6D37 /* Comment.swift */; };
+		13CA3D4322C52ED6000F6D37 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D4222C52ED6000F6D37 /* Company.swift */; };
+		13CA3D4522C52EEE000F6D37 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D4422C52EEE000F6D37 /* Location.swift */; };
+		13CA3D4722C52F3E000F6D37 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D4622C52F3E000F6D37 /* Post.swift */; };
+		13CA3D4922C52F6A000F6D37 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D4822C52F6A000F6D37 /* User.swift */; };
 		2FB7E80709DBED347EAAA560 /* Pods_BabylonViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D684A6FF8E3E7829442B1F64 /* Pods_BabylonViews.framework */; };
 		3D3E9C38B3886AB77187CD9C /* Pods_BabylonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF3880940B1946E00C04AD3 /* Pods_BabylonUITests.framework */; };
 		57083EA75432C675092B1CCE /* Pods_BabylonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5CE1BDD69D137319E07EFD /* Pods_BabylonModels.framework */; };
@@ -253,6 +259,12 @@
 		13CA3D3622C52D59000F6D37 /* ProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderError.swift; sourceTree = "<group>"; };
 		13CA3D3822C52D61000F6D37 /* LocalProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalProviderError.swift; sourceTree = "<group>"; };
 		13CA3D3A22C52D69000F6D37 /* RemoteProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProviderError.swift; sourceTree = "<group>"; };
+		13CA3D3E22C52EA6000F6D37 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		13CA3D4022C52EC0000F6D37 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		13CA3D4222C52ED6000F6D37 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		13CA3D4422C52EEE000F6D37 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		13CA3D4622C52F3E000F6D37 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		13CA3D4822C52F6A000F6D37 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		164678A039A0BAB866F60704 /* Pods-BabylonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonUITests.release.xcconfig"; path = "Target Support Files/Pods-BabylonUITests/Pods-BabylonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1C990ECB4ED40C5F3A21249C /* Pods_BabylonViewModelsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabylonViewModelsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0C1312FE3C4EB3F35D9336 /* Pods-BabylonModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonModels.debug.xcconfig"; path = "Target Support Files/Pods-BabylonModels/Pods-BabylonModels.debug.xcconfig"; sourceTree = "<group>"; };
@@ -478,6 +490,7 @@
 		13CA3CC522C5294E000F6D37 /* BabylonModels */ = {
 			isa = PBXGroup;
 			children = (
+				13CA3D3C22C52E7F000F6D37 /* DTOs */,
 				13CA3CC622C5294E000F6D37 /* BabylonModels.h */,
 				13CA3CC722C5294E000F6D37 /* Info.plist */,
 			);
@@ -551,6 +564,27 @@
 				13CA3D3A22C52D69000F6D37 /* RemoteProviderError.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		13CA3D3C22C52E7F000F6D37 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D3D22C52E86000F6D37 /* Inbound */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		13CA3D3D22C52E86000F6D37 /* Inbound */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D3E22C52EA6000F6D37 /* Address.swift */,
+				13CA3D4022C52EC0000F6D37 /* Comment.swift */,
+				13CA3D4222C52ED6000F6D37 /* Company.swift */,
+				13CA3D4422C52EEE000F6D37 /* Location.swift */,
+				13CA3D4622C52F3E000F6D37 /* Post.swift */,
+				13CA3D4822C52F6A000F6D37 /* User.swift */,
+			);
+			path = Inbound;
 			sourceTree = "<group>";
 		};
 		4CD67A81E525645039BDDC57 /* Pods */ = {
@@ -892,6 +926,7 @@
 					};
 					13CA3CC322C5294E000F6D37 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					13CA3CCB22C5294E000F6D37 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -1335,6 +1370,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CA3D3F22C52EA6000F6D37 /* Address.swift in Sources */,
+				13CA3D4122C52EC0000F6D37 /* Comment.swift in Sources */,
+				13CA3D4922C52F6A000F6D37 /* User.swift in Sources */,
+				13CA3D4522C52EEE000F6D37 /* Location.swift in Sources */,
+				13CA3D4322C52ED6000F6D37 /* Company.swift in Sources */,
+				13CA3D4722C52F3E000F6D37 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1845,6 +1886,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2B0C1312FE3C4EB3F35D9336 /* Pods-BabylonModels.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1863,6 +1905,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonModels;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1874,6 +1917,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA5CBD419A3ECEB4C8355963 /* Pods-BabylonModels.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
