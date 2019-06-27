@@ -7,27 +7,27 @@
 		<key>Babylon.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>14</integer>
 		</dict>
 		<key>BabylonCommon.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>15</integer>
 		</dict>
 		<key>BabylonModels.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>16</integer>
 		</dict>
 		<key>BabylonViewModels.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>17</integer>
 		</dict>
 		<key>BabylonViews.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>18</integer>
 		</dict>
 	</dict>
 </dict>

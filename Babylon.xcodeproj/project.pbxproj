@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -35,6 +35,14 @@
 		13CA3D1A22C52974000F6D37 /* BabylonViews.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CA3D0A22C52973000F6D37 /* BabylonViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13CA3D1D22C52974000F6D37 /* BabylonViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3D0822C52973000F6D37 /* BabylonViews.framework */; };
 		13CA3D1E22C52974000F6D37 /* BabylonViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3D0822C52973000F6D37 /* BabylonViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		13CA3D2722C52BD2000F6D37 /* BabylonCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CA122C52941000F6D37 /* BabylonCommon.framework */; };
+		13CA3D2C22C52BE6000F6D37 /* BabylonCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CA122C52941000F6D37 /* BabylonCommon.framework */; };
+		13CA3D2D22C52BE6000F6D37 /* BabylonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CC422C5294E000F6D37 /* BabylonModels.framework */; };
+		13CA3D3222C52BF6000F6D37 /* BabylonCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CA122C52941000F6D37 /* BabylonCommon.framework */; };
+		13CA3D3322C52BF6000F6D37 /* BabylonViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CE622C5295E000F6D37 /* BabylonViewModels.framework */; };
+		13CA3D3722C52D59000F6D37 /* ProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D3622C52D59000F6D37 /* ProviderError.swift */; };
+		13CA3D3922C52D61000F6D37 /* LocalProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D3822C52D61000F6D37 /* LocalProviderError.swift */; };
+		13CA3D3B22C52D69000F6D37 /* RemoteProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D3A22C52D69000F6D37 /* RemoteProviderError.swift */; };
 		2FB7E80709DBED347EAAA560 /* Pods_BabylonViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D684A6FF8E3E7829442B1F64 /* Pods_BabylonViews.framework */; };
 		3D3E9C38B3886AB77187CD9C /* Pods_BabylonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF3880940B1946E00C04AD3 /* Pods_BabylonUITests.framework */; };
 		57083EA75432C675092B1CCE /* Pods_BabylonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5CE1BDD69D137319E07EFD /* Pods_BabylonModels.framework */; };
@@ -147,6 +155,41 @@
 			remoteGlobalIDString = 13CA3D0722C52973000F6D37;
 			remoteInfo = BabylonViews;
 		};
+		13CA3D2522C52BC7000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3CA022C52941000F6D37;
+			remoteInfo = BabylonCommon;
+		};
+		13CA3D2822C52BDB000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3CA022C52941000F6D37;
+			remoteInfo = BabylonCommon;
+		};
+		13CA3D2A22C52BE0000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3CC322C5294E000F6D37;
+			remoteInfo = BabylonModels;
+		};
+		13CA3D2E22C52BEF000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3CA022C52941000F6D37;
+			remoteInfo = BabylonCommon;
+		};
+		13CA3D3022C52BEF000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3CE522C5295E000F6D37;
+			remoteInfo = BabylonViewModels;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -207,6 +250,9 @@
 		13CA3D1022C52973000F6D37 /* BabylonViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabylonViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CA3D1722C52973000F6D37 /* BabylonViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabylonViewsTests.swift; sourceTree = "<group>"; };
 		13CA3D1922C52973000F6D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CA3D3622C52D59000F6D37 /* ProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderError.swift; sourceTree = "<group>"; };
+		13CA3D3822C52D61000F6D37 /* LocalProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalProviderError.swift; sourceTree = "<group>"; };
+		13CA3D3A22C52D69000F6D37 /* RemoteProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProviderError.swift; sourceTree = "<group>"; };
 		164678A039A0BAB866F60704 /* Pods-BabylonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonUITests.release.xcconfig"; path = "Target Support Files/Pods-BabylonUITests/Pods-BabylonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1C990ECB4ED40C5F3A21249C /* Pods_BabylonViewModelsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabylonViewModelsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0C1312FE3C4EB3F35D9336 /* Pods-BabylonModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonModels.debug.xcconfig"; path = "Target Support Files/Pods-BabylonModels/Pods-BabylonModels.debug.xcconfig"; sourceTree = "<group>"; };
@@ -290,6 +336,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CA3D2722C52BD2000F6D37 /* BabylonCommon.framework in Frameworks */,
 				57083EA75432C675092B1CCE /* Pods_BabylonModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +354,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CA3D2C22C52BE6000F6D37 /* BabylonCommon.framework in Frameworks */,
+				13CA3D2D22C52BE6000F6D37 /* BabylonModels.framework in Frameworks */,
 				D72F13087DCF6C07539BE57C /* Pods_BabylonViewModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +373,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CA3D3222C52BF6000F6D37 /* BabylonCommon.framework in Frameworks */,
+				13CA3D3322C52BF6000F6D37 /* BabylonViewModels.framework in Frameworks */,
 				2FB7E80709DBED347EAAA560 /* Pods_BabylonViews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,16 +395,11 @@
 			isa = PBXGroup;
 			children = (
 				13CA3C6A22C5292E000F6D37 /* Babylon */,
-				13CA3C8222C5292F000F6D37 /* BabylonTests */,
-				13CA3C8D22C5292F000F6D37 /* BabylonUITests */,
 				13CA3CA222C52941000F6D37 /* BabylonCommon */,
-				13CA3CAF22C52941000F6D37 /* BabylonCommonTests */,
 				13CA3CC522C5294E000F6D37 /* BabylonModels */,
-				13CA3CD222C5294E000F6D37 /* BabylonModelsTests */,
 				13CA3CE722C5295E000F6D37 /* BabylonViewModels */,
-				13CA3CF422C5295E000F6D37 /* BabylonViewModelsTests */,
 				13CA3D0922C52973000F6D37 /* BabylonViews */,
-				13CA3D1622C52973000F6D37 /* BabylonViewsTests */,
+				13CA3D3422C52D22000F6D37 /* Tests */,
 				13CA3C6922C5292E000F6D37 /* Products */,
 				4CD67A81E525645039BDDC57 /* Pods */,
 				7B758554ED71BD0291690477 /* Frameworks */,
@@ -413,6 +459,7 @@
 		13CA3CA222C52941000F6D37 /* BabylonCommon */ = {
 			isa = PBXGroup;
 			children = (
+				13CA3D3522C52D51000F6D37 /* Errors */,
 				13CA3CA322C52941000F6D37 /* BabylonCommon.h */,
 				13CA3CA422C52941000F6D37 /* Info.plist */,
 			);
@@ -479,7 +526,31 @@
 				13CA3D1722C52973000F6D37 /* BabylonViewsTests.swift */,
 				13CA3D1922C52973000F6D37 /* Info.plist */,
 			);
+			name = BabylonViewsTests;
+			sourceTree = "<group>";
+		};
+		13CA3D3422C52D22000F6D37 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3C8222C5292F000F6D37 /* BabylonTests */,
+				13CA3C8D22C5292F000F6D37 /* BabylonUITests */,
+				13CA3CAF22C52941000F6D37 /* BabylonCommonTests */,
+				13CA3CD222C5294E000F6D37 /* BabylonModelsTests */,
+				13CA3CF422C5295E000F6D37 /* BabylonViewModelsTests */,
+				13CA3D1622C52973000F6D37 /* BabylonViewsTests */,
+			);
+			name = Tests;
 			path = BabylonViewsTests;
+			sourceTree = "<group>";
+		};
+		13CA3D3522C52D51000F6D37 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D3622C52D59000F6D37 /* ProviderError.swift */,
+				13CA3D3822C52D61000F6D37 /* LocalProviderError.swift */,
+				13CA3D3A22C52D69000F6D37 /* RemoteProviderError.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 		4CD67A81E525645039BDDC57 /* Pods */ = {
@@ -508,7 +579,6 @@
 				BD4CFEC24A893D2F7F3D28F9 /* Pods-BabylonViewsTests.debug.xcconfig */,
 				51B0CC22132DC52A4302B335 /* Pods-BabylonViewsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -682,6 +752,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				13CA3D2622C52BC7000F6D37 /* PBXTargetDependency */,
 			);
 			name = BabylonModels;
 			productName = BabylonModels;
@@ -721,6 +792,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				13CA3D2B22C52BE0000F6D37 /* PBXTargetDependency */,
+				13CA3D2922C52BDB000F6D37 /* PBXTargetDependency */,
 			);
 			name = BabylonViewModels;
 			productName = BabylonViewModels;
@@ -760,6 +833,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				13CA3D2F22C52BEF000F6D37 /* PBXTargetDependency */,
+				13CA3D3122C52BEF000F6D37 /* PBXTargetDependency */,
 			);
 			name = BabylonViews;
 			productName = BabylonViews;
@@ -809,6 +884,7 @@
 					};
 					13CA3CA022C52941000F6D37 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					13CA3CA822C52941000F6D37 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -1241,6 +1317,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CA3D3722C52D59000F6D37 /* ProviderError.swift in Sources */,
+				13CA3D3922C52D61000F6D37 /* LocalProviderError.swift in Sources */,
+				13CA3D3B22C52D69000F6D37 /* RemoteProviderError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1369,6 +1448,31 @@
 			isa = PBXTargetDependency;
 			target = 13CA3D0722C52973000F6D37 /* BabylonViews */;
 			targetProxy = 13CA3D1B22C52974000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3D2622C52BC7000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3CA022C52941000F6D37 /* BabylonCommon */;
+			targetProxy = 13CA3D2522C52BC7000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3D2922C52BDB000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3CA022C52941000F6D37 /* BabylonCommon */;
+			targetProxy = 13CA3D2822C52BDB000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3D2B22C52BE0000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3CC322C5294E000F6D37 /* BabylonModels */;
+			targetProxy = 13CA3D2A22C52BE0000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3D2F22C52BEF000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3CA022C52941000F6D37 /* BabylonCommon */;
+			targetProxy = 13CA3D2E22C52BEF000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3D3122C52BEF000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3CE522C5295E000F6D37 /* BabylonViewModels */;
+			targetProxy = 13CA3D3022C52BEF000F6D37 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1512,6 +1616,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F733009F6A491BF587DB8924 /* Pods-Babylon.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
@@ -1531,6 +1636,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F59A7BF3192A253EE3E5D9B /* Pods-Babylon.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
@@ -1636,6 +1742,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BE149AC6EDFDE8EA29237104 /* Pods-BabylonCommon.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1654,6 +1761,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonCommon;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1665,6 +1773,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6692C9F5609316EAAF00053D /* Pods-BabylonCommon.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
