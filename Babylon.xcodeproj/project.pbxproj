@@ -55,6 +55,16 @@
 		13CA3D5522C532BC000F6D37 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D5422C532BC000F6D37 /* Signal.swift */; };
 		13CA3D5922C5359A000F6D37 /* Reactive+DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D5822C5359A000F6D37 /* Reactive+DataRequest.swift */; };
 		13CA3D5D22C53676000F6D37 /* SignalProducer+DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D5C22C53676000F6D37 /* SignalProducer+DataResponse.swift */; };
+		13CA3D6022C538DF000F6D37 /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D5F22C538DF000F6D37 /* DataContainer.swift */; };
+		13CA3D6322C53943000F6D37 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D6122C53943000F6D37 /* DataModel.xcdatamodeld */; };
+		13CA3D6822C5396C000F6D37 /* PostMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D6522C5396C000F6D37 /* PostMO.swift */; };
+		13CA3D6922C5396C000F6D37 /* CommentMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D6622C5396C000F6D37 /* CommentMO.swift */; };
+		13CA3D6A22C5396C000F6D37 /* UserMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D6722C5396C000F6D37 /* UserMO.swift */; };
+		13CA3D6C22C539F1000F6D37 /* LocalProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D6B22C539F1000F6D37 /* LocalProviderProtocol.swift */; };
+		13CA3D6F22C53A4E000F6D37 /* PostLocalProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D6E22C53A4E000F6D37 /* PostLocalProviderProtocol.swift */; };
+		13CA3D7222C53EA1000F6D37 /* PostProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D7122C53EA1000F6D37 /* PostProviderProtocol.swift */; };
+		13CA3D7522C53F34000F6D37 /* FetchStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D7422C53F34000F6D37 /* FetchStrategy.swift */; };
+		13CA3D7722C53F99000F6D37 /* FetchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D7622C53F99000F6D37 /* FetchResult.swift */; };
 		2FB7E80709DBED347EAAA560 /* Pods_BabylonViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D684A6FF8E3E7829442B1F64 /* Pods_BabylonViews.framework */; };
 		3D3E9C38B3886AB77187CD9C /* Pods_BabylonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF3880940B1946E00C04AD3 /* Pods_BabylonUITests.framework */; };
 		57083EA75432C675092B1CCE /* Pods_BabylonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5CE1BDD69D137319E07EFD /* Pods_BabylonModels.framework */; };
@@ -277,6 +287,16 @@
 		13CA3D5422C532BC000F6D37 /* Signal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
 		13CA3D5822C5359A000F6D37 /* Reactive+DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+DataRequest.swift"; sourceTree = "<group>"; };
 		13CA3D5C22C53676000F6D37 /* SignalProducer+DataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignalProducer+DataResponse.swift"; sourceTree = "<group>"; };
+		13CA3D5F22C538DF000F6D37 /* DataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
+		13CA3D6222C53943000F6D37 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		13CA3D6522C5396C000F6D37 /* PostMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostMO.swift; sourceTree = "<group>"; };
+		13CA3D6622C5396C000F6D37 /* CommentMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentMO.swift; sourceTree = "<group>"; };
+		13CA3D6722C5396C000F6D37 /* UserMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMO.swift; sourceTree = "<group>"; };
+		13CA3D6B22C539F1000F6D37 /* LocalProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalProviderProtocol.swift; sourceTree = "<group>"; };
+		13CA3D6E22C53A4E000F6D37 /* PostLocalProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLocalProviderProtocol.swift; sourceTree = "<group>"; };
+		13CA3D7122C53EA1000F6D37 /* PostProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProviderProtocol.swift; sourceTree = "<group>"; };
+		13CA3D7422C53F34000F6D37 /* FetchStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchStrategy.swift; sourceTree = "<group>"; };
+		13CA3D7622C53F99000F6D37 /* FetchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchResult.swift; sourceTree = "<group>"; };
 		164678A039A0BAB866F60704 /* Pods-BabylonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonUITests.release.xcconfig"; path = "Target Support Files/Pods-BabylonUITests/Pods-BabylonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1C990ECB4ED40C5F3A21249C /* Pods_BabylonViewModelsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabylonViewModelsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0C1312FE3C4EB3F35D9336 /* Pods-BabylonModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonModels.debug.xcconfig"; path = "Target Support Files/Pods-BabylonModels/Pods-BabylonModels.debug.xcconfig"; sourceTree = "<group>"; };
@@ -487,6 +507,8 @@
 				13CA3D3522C52D51000F6D37 /* Errors */,
 				13CA3CA322C52941000F6D37 /* BabylonCommon.h */,
 				13CA3CA422C52941000F6D37 /* Info.plist */,
+				13CA3D7422C53F34000F6D37 /* FetchStrategy.swift */,
+				13CA3D7622C53F99000F6D37 /* FetchResult.swift */,
 			);
 			path = BabylonCommon;
 			sourceTree = "<group>";
@@ -503,6 +525,7 @@
 		13CA3CC522C5294E000F6D37 /* BabylonModels */ = {
 			isa = PBXGroup;
 			children = (
+				13CA3D5E22C538CF000F6D37 /* Persistence */,
 				13CA3D5622C5354B000F6D37 /* Extensions */,
 				13CA3D4A22C53101000F6D37 /* API */,
 				13CA3D3C22C52E7F000F6D37 /* DTOs */,
@@ -606,6 +629,7 @@
 			isa = PBXGroup;
 			children = (
 				13CA3D5122C531EF000F6D37 /* RemoteProviderProtocol.swift */,
+				13CA3D6B22C539F1000F6D37 /* LocalProviderProtocol.swift */,
 				13CA3D4B22C5310C000F6D37 /* Post */,
 			);
 			path = API;
@@ -614,6 +638,8 @@
 		13CA3D4B22C5310C000F6D37 /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				13CA3D7122C53EA1000F6D37 /* PostProviderProtocol.swift */,
+				13CA3D6D22C53A44000F6D37 /* Local */,
 				13CA3D4C22C53120000F6D37 /* Remote */,
 			);
 			path = Post;
@@ -651,6 +677,34 @@
 				13CA3D5822C5359A000F6D37 /* Reactive+DataRequest.swift */,
 			);
 			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		13CA3D5E22C538CF000F6D37 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D6422C53954000F6D37 /* ManagedObjects */,
+				13CA3D6122C53943000F6D37 /* DataModel.xcdatamodeld */,
+				13CA3D5F22C538DF000F6D37 /* DataContainer.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		13CA3D6422C53954000F6D37 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D6622C5396C000F6D37 /* CommentMO.swift */,
+				13CA3D6522C5396C000F6D37 /* PostMO.swift */,
+				13CA3D6722C5396C000F6D37 /* UserMO.swift */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		13CA3D6D22C53A44000F6D37 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D6E22C53A4E000F6D37 /* PostLocalProviderProtocol.swift */,
+			);
+			path = Local;
 			sourceTree = "<group>";
 		};
 		4CD67A81E525645039BDDC57 /* Pods */ = {
@@ -1420,8 +1474,10 @@
 			files = (
 				13CA3D3722C52D59000F6D37 /* ProviderError.swift in Sources */,
 				13CA3D5522C532BC000F6D37 /* Signal.swift in Sources */,
+				13CA3D7522C53F34000F6D37 /* FetchStrategy.swift in Sources */,
 				13CA3D3922C52D61000F6D37 /* LocalProviderError.swift in Sources */,
 				13CA3D3B22C52D69000F6D37 /* RemoteProviderError.swift in Sources */,
+				13CA3D7722C53F99000F6D37 /* FetchResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1437,9 +1493,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CA3D6922C5396C000F6D37 /* CommentMO.swift in Sources */,
 				13CA3D5D22C53676000F6D37 /* SignalProducer+DataResponse.swift in Sources */,
+				13CA3D6A22C5396C000F6D37 /* UserMO.swift in Sources */,
+				13CA3D6C22C539F1000F6D37 /* LocalProviderProtocol.swift in Sources */,
 				13CA3D5022C53195000F6D37 /* PostRemoteProvider.swift in Sources */,
 				13CA3D3F22C52EA6000F6D37 /* Address.swift in Sources */,
+				13CA3D7222C53EA1000F6D37 /* PostProviderProtocol.swift in Sources */,
+				13CA3D6F22C53A4E000F6D37 /* PostLocalProviderProtocol.swift in Sources */,
 				13CA3D4122C52EC0000F6D37 /* Comment.swift in Sources */,
 				13CA3D4922C52F6A000F6D37 /* User.swift in Sources */,
 				13CA3D5922C5359A000F6D37 /* Reactive+DataRequest.swift in Sources */,
@@ -1447,7 +1508,10 @@
 				13CA3D4522C52EEE000F6D37 /* Location.swift in Sources */,
 				13CA3D4322C52ED6000F6D37 /* Company.swift in Sources */,
 				13CA3D5222C531EF000F6D37 /* RemoteProviderProtocol.swift in Sources */,
+				13CA3D6322C53943000F6D37 /* DataModel.xcdatamodeld in Sources */,
+				13CA3D6822C5396C000F6D37 /* PostMO.swift in Sources */,
 				13CA3D4722C52F3E000F6D37 /* Post.swift in Sources */,
+				13CA3D6022C538DF000F6D37 /* DataContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2378,6 +2442,16 @@
 			);
 			currentVersion = 13CA3C7322C5292E000F6D37 /* Babylon.xcdatamodel */;
 			path = Babylon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		13CA3D6122C53943000F6D37 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				13CA3D6222C53943000F6D37 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 13CA3D6222C53943000F6D37 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -12,7 +12,7 @@ import ReactiveSwift
 public protocol PostRemoteProviderProtocol: RemoteProviderProtocol {
     func fetchPostList(page: Int, limit: Int) -> SignalProducer<[Post], RemoteProviderError>
     
-    func fetchPost(id: Int) -> SignalProducer<Post?, RemoteProviderError>
+    func fetchPost(id: Int) -> SignalProducer<Post, RemoteProviderError>
 }
 
 public class PostRemoteProvider: RemoteProvider, PostRemoteProviderProtocol {
@@ -27,7 +27,7 @@ public class PostRemoteProvider: RemoteProvider, PostRemoteProviderProtocol {
             .decode([Post].self)
     }
     
-    public func fetchPost(id: Int) -> SignalProducer<Post?, RemoteProviderError> {
+    public func fetchPost(id: Int) -> SignalProducer<Post, RemoteProviderError> {
         
         return sessionManager
             .request(PostRouter.fetchPost(id))
@@ -35,7 +35,7 @@ public class PostRemoteProvider: RemoteProvider, PostRemoteProviderProtocol {
             .responseData()
             .promoteError(RemoteProviderError.self)
             .data()
-            .decode(Post?.self)
+            .decode(Post.self)
     }
     
 }
