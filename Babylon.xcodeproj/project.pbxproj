@@ -69,6 +69,12 @@
 		13CA3D7D22C5469E000F6D37 /* CommentRemoteProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D7C22C5469E000F6D37 /* CommentRemoteProviderProtocol.swift */; };
 		13CA3D8022C5498E000F6D37 /* CommentLocalProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D7F22C5498E000F6D37 /* CommentLocalProviderProtocol.swift */; };
 		13CA3D8222C56513000F6D37 /* CommentProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D8122C56513000F6D37 /* CommentProviderProtocol.swift */; };
+		13CA3D8522C5678D000F6D37 /* ProviderBundleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D8422C5678D000F6D37 /* ProviderBundleProtocol.swift */; };
+		13CA3D8922C567D7000F6D37 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D8822C567D7000F6D37 /* UserRouter.swift */; };
+		13CA3D8B22C56819000F6D37 /* UserRemoteProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D8A22C56819000F6D37 /* UserRemoteProviderProtocol.swift */; };
+		13CA3D8D22C56902000F6D37 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D8C22C56902000F6D37 /* Network.swift */; };
+		13CA3D9022C56B0F000F6D37 /* UserLocalProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D8F22C56B0F000F6D37 /* UserLocalProviderProtocol.swift */; };
+		13CA3D9222C56C9D000F6D37 /* UserProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D9122C56C9D000F6D37 /* UserProviderProtocol.swift */; };
 		2FB7E80709DBED347EAAA560 /* Pods_BabylonViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D684A6FF8E3E7829442B1F64 /* Pods_BabylonViews.framework */; };
 		3D3E9C38B3886AB77187CD9C /* Pods_BabylonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF3880940B1946E00C04AD3 /* Pods_BabylonUITests.framework */; };
 		57083EA75432C675092B1CCE /* Pods_BabylonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5CE1BDD69D137319E07EFD /* Pods_BabylonModels.framework */; };
@@ -305,6 +311,12 @@
 		13CA3D7C22C5469E000F6D37 /* CommentRemoteProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRemoteProviderProtocol.swift; sourceTree = "<group>"; };
 		13CA3D7F22C5498E000F6D37 /* CommentLocalProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentLocalProviderProtocol.swift; sourceTree = "<group>"; };
 		13CA3D8122C56513000F6D37 /* CommentProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentProviderProtocol.swift; sourceTree = "<group>"; };
+		13CA3D8422C5678D000F6D37 /* ProviderBundleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderBundleProtocol.swift; sourceTree = "<group>"; };
+		13CA3D8822C567D7000F6D37 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		13CA3D8A22C56819000F6D37 /* UserRemoteProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRemoteProviderProtocol.swift; sourceTree = "<group>"; };
+		13CA3D8C22C56902000F6D37 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		13CA3D8F22C56B0F000F6D37 /* UserLocalProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalProviderProtocol.swift; sourceTree = "<group>"; };
+		13CA3D9122C56C9D000F6D37 /* UserProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProviderProtocol.swift; sourceTree = "<group>"; };
 		164678A039A0BAB866F60704 /* Pods-BabylonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonUITests.release.xcconfig"; path = "Target Support Files/Pods-BabylonUITests/Pods-BabylonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1C990ECB4ED40C5F3A21249C /* Pods_BabylonViewModelsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabylonViewModelsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0C1312FE3C4EB3F35D9336 /* Pods-BabylonModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonModels.debug.xcconfig"; path = "Target Support Files/Pods-BabylonModels/Pods-BabylonModels.debug.xcconfig"; sourceTree = "<group>"; };
@@ -636,8 +648,11 @@
 		13CA3D4A22C53101000F6D37 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				13CA3D8C22C56902000F6D37 /* Network.swift */,
 				13CA3D5122C531EF000F6D37 /* RemoteProviderProtocol.swift */,
 				13CA3D6B22C539F1000F6D37 /* LocalProviderProtocol.swift */,
+				13CA3D8322C5677E000F6D37 /* Bundles */,
+				13CA3D8622C567C7000F6D37 /* User */,
 				13CA3D7822C54614000F6D37 /* Comment */,
 				13CA3D4B22C5310C000F6D37 /* Post */,
 			);
@@ -739,6 +754,41 @@
 			isa = PBXGroup;
 			children = (
 				13CA3D7F22C5498E000F6D37 /* CommentLocalProviderProtocol.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		13CA3D8322C5677E000F6D37 /* Bundles */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D8422C5678D000F6D37 /* ProviderBundleProtocol.swift */,
+			);
+			path = Bundles;
+			sourceTree = "<group>";
+		};
+		13CA3D8622C567C7000F6D37 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D9122C56C9D000F6D37 /* UserProviderProtocol.swift */,
+				13CA3D8E22C56B01000F6D37 /* Local */,
+				13CA3D8722C567CC000F6D37 /* Remote */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		13CA3D8722C567CC000F6D37 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D8822C567D7000F6D37 /* UserRouter.swift */,
+				13CA3D8A22C56819000F6D37 /* UserRemoteProviderProtocol.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		13CA3D8E22C56B01000F6D37 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D8F22C56B0F000F6D37 /* UserLocalProviderProtocol.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -1529,20 +1579,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CA3D9222C56C9D000F6D37 /* UserProviderProtocol.swift in Sources */,
 				13CA3D6922C5396C000F6D37 /* CommentMO.swift in Sources */,
 				13CA3D5D22C53676000F6D37 /* SignalProducer+DataResponse.swift in Sources */,
 				13CA3D6A22C5396C000F6D37 /* UserMO.swift in Sources */,
 				13CA3D6C22C539F1000F6D37 /* LocalProviderProtocol.swift in Sources */,
 				13CA3D5022C53195000F6D37 /* PostRemoteProvider.swift in Sources */,
 				13CA3D3F22C52EA6000F6D37 /* Address.swift in Sources */,
+				13CA3D8B22C56819000F6D37 /* UserRemoteProviderProtocol.swift in Sources */,
 				13CA3D7222C53EA1000F6D37 /* PostProviderProtocol.swift in Sources */,
 				13CA3D6F22C53A4E000F6D37 /* PostLocalProviderProtocol.swift in Sources */,
+				13CA3D9022C56B0F000F6D37 /* UserLocalProviderProtocol.swift in Sources */,
 				13CA3D4122C52EC0000F6D37 /* Comment.swift in Sources */,
 				13CA3D8222C56513000F6D37 /* CommentProviderProtocol.swift in Sources */,
 				13CA3D4922C52F6A000F6D37 /* User.swift in Sources */,
 				13CA3D5922C5359A000F6D37 /* Reactive+DataRequest.swift in Sources */,
 				13CA3D4E22C53129000F6D37 /* PostRouter.swift in Sources */,
 				13CA3D7D22C5469E000F6D37 /* CommentRemoteProviderProtocol.swift in Sources */,
+				13CA3D8D22C56902000F6D37 /* Network.swift in Sources */,
+				13CA3D8522C5678D000F6D37 /* ProviderBundleProtocol.swift in Sources */,
 				13CA3D4522C52EEE000F6D37 /* Location.swift in Sources */,
 				13CA3D4322C52ED6000F6D37 /* Company.swift in Sources */,
 				13CA3D7B22C5462E000F6D37 /* CommentRouter.swift in Sources */,
@@ -1552,6 +1607,7 @@
 				13CA3D6822C5396C000F6D37 /* PostMO.swift in Sources */,
 				13CA3D4722C52F3E000F6D37 /* Post.swift in Sources */,
 				13CA3D6022C538DF000F6D37 /* DataContainer.swift in Sources */,
+				13CA3D8922C567D7000F6D37 /* UserRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

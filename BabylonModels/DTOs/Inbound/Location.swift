@@ -23,6 +23,18 @@ public struct Location {
         self.longitude = long
     }
     
+    public init?(latitude: Double?,
+                longitude: Double?) {
+        
+        guard let lat = latitude,
+            let long = longitude else {
+                return nil
+        }
+        
+        self.latitude = lat
+        self.longitude = long
+    }
+    
     public init(latitude: Double,
                 longitude: Double) {
         

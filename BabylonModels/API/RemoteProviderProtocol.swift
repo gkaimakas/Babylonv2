@@ -11,14 +11,14 @@ import BabylonCommon
 import ReactiveSwift
 
 public protocol RemoteProviderProtocol: class {
-    init(sessionManager: SessionManager)
+    init(network: Network)
 }
 
 
 public class RemoteProvider: RemoteProviderProtocol {
-    public let sessionManager: SessionManager
+    public let network: Network
     
-    required public init(sessionManager: SessionManager) {
-        self.sessionManager = sessionManager
+    required public init(network: Network) {
+        self.network = network
     }
 }

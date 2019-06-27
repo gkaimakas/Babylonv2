@@ -18,22 +18,14 @@ public protocol CommentRemoteProviderProtocol: RemoteProvider {
 
 public final class CommentRemoteProvider: RemoteProvider, CommentRemoteProviderProtocol {
     public func fetchComment(id: Int) -> SignalProducer<Comment, RemoteProviderError> {
-        return sessionManager
-            .request(CommentRouter.fetchComment(id: id))
-            .reactive
-            .responseData()
-            .promoteError(RemoteProviderError.self)
-            .data()
+        return network
+            .data(from: try! CommentRouter.fetchComment(id: id).asURLRequest())
             .decode(Comment.self)
     }
     
     public func fetchComments(postId: Int) -> SignalProducer<[Comment], RemoteProviderError> {
-        return sessionManager
-            .request(CommentRouter.fetchComments(postId: postId))
-            .reactive
-            .responseData()
-            .promoteError(RemoteProviderError.self)
-            .data()
+        return network
+            .data(from: try! CommentRouter.fetchComments(postId: postId).asURLRequest())
             .decode(Array<Comment>.self)
     }
 }

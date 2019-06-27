@@ -9,7 +9,7 @@ import Foundation
 import BabylonCommon
 import ReactiveSwift
 
-public protocol CommentProviderProtocol {
+public protocol CommentProviderProtocol: class {
     func fetchComment(id: Int, strategy: FetchStrategy<Comment>) -> SignalProducer<FetchResult<Comment>, ProviderError>
     func fetchComments(postId: Int, strategy: FetchStrategy<[Comment]>) -> SignalProducer<FetchResult<[Comment]>, ProviderError>
 }

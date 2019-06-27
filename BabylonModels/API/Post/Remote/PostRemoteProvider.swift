@@ -18,26 +18,16 @@ public protocol PostRemoteProviderProtocol: RemoteProviderProtocol {
 public class PostRemoteProvider: RemoteProvider, PostRemoteProviderProtocol {
     public func fetchPostList(page: Int, limit: Int) -> SignalProducer<[Post], RemoteProviderError> {
         
-        return sessionManager
-            .request(PostRouter.fetchPosts(page, limit))
-            .reactive
-            .responseData()
-            .promoteError(RemoteProviderError.self)
-            .data()
+        return network
+            .data(from: try! PostRouter.fetchPosts(page, limit).asURLRequest())
             .decode([Post].self)
     }
     
     public func fetchPost(id: Int) -> SignalProducer<Post, RemoteProviderError> {
-        
-        return sessionManager
-            .request(PostRouter.fetchPost(id))
-            .reactive
-            .responseData()
-            .promoteError(RemoteProviderError.self)
-            .data()
+        return network
+            .data(from: try! PostRouter.fetchPost(id).asURLRequest())
             .decode(Post.self)
     }
-    
 }
 
 
