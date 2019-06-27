@@ -24,6 +24,19 @@ public enum FetchStrategy<T> {
     /// Data should be fetched first from `local` storage. Then if the result of `RemoteFetchCondition` is true
     /// data should be fetched from the backend.
     case conditional(RemoteFetchCondition)
+    
+    public func map<U>(_ transform: (RemoteFetchCondition) -> (U)-> Bool) -> FetchStrategy<U> {
+        switch self {
+        case .local:
+            return .local
+        case .remote:
+            return .remote
+        case .merge:
+            return .merge
+        case .conditional(let remoteFetch):
+            return .conditional(transform(remoteFetch))
+        }
+    }
 }
 
 extension FetchStrategy: Equatable {
