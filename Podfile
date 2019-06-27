@@ -4,6 +4,7 @@ platform :ios, '12.0'
 target 'Babylon' do
   use_frameworks!
 
+    pod 'Alamofire'
   pod 'SnapKit'
   pod 'ReactiveCocoa'
   pod 'ReactiveSwift'
@@ -38,6 +39,7 @@ end
 target 'BabylonModels' do
   use_frameworks!
 
+  pod 'Alamofire'
   pod 'ReactiveSwift'
 
   target 'BabylonModelsTests' do

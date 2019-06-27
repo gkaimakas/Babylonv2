@@ -49,6 +49,12 @@
 		13CA3D4522C52EEE000F6D37 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D4422C52EEE000F6D37 /* Location.swift */; };
 		13CA3D4722C52F3E000F6D37 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D4622C52F3E000F6D37 /* Post.swift */; };
 		13CA3D4922C52F6A000F6D37 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D4822C52F6A000F6D37 /* User.swift */; };
+		13CA3D4E22C53129000F6D37 /* PostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D4D22C53129000F6D37 /* PostRouter.swift */; };
+		13CA3D5022C53195000F6D37 /* PostRemoteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D4F22C53195000F6D37 /* PostRemoteProvider.swift */; };
+		13CA3D5222C531EF000F6D37 /* RemoteProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D5122C531EF000F6D37 /* RemoteProviderProtocol.swift */; };
+		13CA3D5522C532BC000F6D37 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D5422C532BC000F6D37 /* Signal.swift */; };
+		13CA3D5922C5359A000F6D37 /* Reactive+DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D5822C5359A000F6D37 /* Reactive+DataRequest.swift */; };
+		13CA3D5D22C53676000F6D37 /* SignalProducer+DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D5C22C53676000F6D37 /* SignalProducer+DataResponse.swift */; };
 		2FB7E80709DBED347EAAA560 /* Pods_BabylonViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D684A6FF8E3E7829442B1F64 /* Pods_BabylonViews.framework */; };
 		3D3E9C38B3886AB77187CD9C /* Pods_BabylonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF3880940B1946E00C04AD3 /* Pods_BabylonUITests.framework */; };
 		57083EA75432C675092B1CCE /* Pods_BabylonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C5CE1BDD69D137319E07EFD /* Pods_BabylonModels.framework */; };
@@ -265,6 +271,12 @@
 		13CA3D4422C52EEE000F6D37 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		13CA3D4622C52F3E000F6D37 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		13CA3D4822C52F6A000F6D37 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		13CA3D4D22C53129000F6D37 /* PostRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRouter.swift; sourceTree = "<group>"; };
+		13CA3D4F22C53195000F6D37 /* PostRemoteProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRemoteProvider.swift; sourceTree = "<group>"; };
+		13CA3D5122C531EF000F6D37 /* RemoteProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProviderProtocol.swift; sourceTree = "<group>"; };
+		13CA3D5422C532BC000F6D37 /* Signal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		13CA3D5822C5359A000F6D37 /* Reactive+DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+DataRequest.swift"; sourceTree = "<group>"; };
+		13CA3D5C22C53676000F6D37 /* SignalProducer+DataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignalProducer+DataResponse.swift"; sourceTree = "<group>"; };
 		164678A039A0BAB866F60704 /* Pods-BabylonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonUITests.release.xcconfig"; path = "Target Support Files/Pods-BabylonUITests/Pods-BabylonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1C990ECB4ED40C5F3A21249C /* Pods_BabylonViewModelsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabylonViewModelsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0C1312FE3C4EB3F35D9336 /* Pods-BabylonModels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonModels.debug.xcconfig"; path = "Target Support Files/Pods-BabylonModels/Pods-BabylonModels.debug.xcconfig"; sourceTree = "<group>"; };
@@ -471,6 +483,7 @@
 		13CA3CA222C52941000F6D37 /* BabylonCommon */ = {
 			isa = PBXGroup;
 			children = (
+				13CA3D5322C532B3000F6D37 /* Extensions */,
 				13CA3D3522C52D51000F6D37 /* Errors */,
 				13CA3CA322C52941000F6D37 /* BabylonCommon.h */,
 				13CA3CA422C52941000F6D37 /* Info.plist */,
@@ -490,6 +503,8 @@
 		13CA3CC522C5294E000F6D37 /* BabylonModels */ = {
 			isa = PBXGroup;
 			children = (
+				13CA3D5622C5354B000F6D37 /* Extensions */,
+				13CA3D4A22C53101000F6D37 /* API */,
 				13CA3D3C22C52E7F000F6D37 /* DTOs */,
 				13CA3CC622C5294E000F6D37 /* BabylonModels.h */,
 				13CA3CC722C5294E000F6D37 /* Info.plist */,
@@ -585,6 +600,57 @@
 				13CA3D4822C52F6A000F6D37 /* User.swift */,
 			);
 			path = Inbound;
+			sourceTree = "<group>";
+		};
+		13CA3D4A22C53101000F6D37 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D5122C531EF000F6D37 /* RemoteProviderProtocol.swift */,
+				13CA3D4B22C5310C000F6D37 /* Post */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		13CA3D4B22C5310C000F6D37 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D4C22C53120000F6D37 /* Remote */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		13CA3D4C22C53120000F6D37 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D4F22C53195000F6D37 /* PostRemoteProvider.swift */,
+				13CA3D4D22C53129000F6D37 /* PostRouter.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		13CA3D5322C532B3000F6D37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D5422C532BC000F6D37 /* Signal.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		13CA3D5622C5354B000F6D37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D5722C53566000F6D37 /* Alamofire */,
+				13CA3D5C22C53676000F6D37 /* SignalProducer+DataResponse.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		13CA3D5722C53566000F6D37 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D5822C5359A000F6D37 /* Reactive+DataRequest.swift */,
+			);
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 		4CD67A81E525645039BDDC57 /* Pods */ = {
@@ -1353,6 +1419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13CA3D3722C52D59000F6D37 /* ProviderError.swift in Sources */,
+				13CA3D5522C532BC000F6D37 /* Signal.swift in Sources */,
 				13CA3D3922C52D61000F6D37 /* LocalProviderError.swift in Sources */,
 				13CA3D3B22C52D69000F6D37 /* RemoteProviderError.swift in Sources */,
 			);
@@ -1370,11 +1437,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CA3D5D22C53676000F6D37 /* SignalProducer+DataResponse.swift in Sources */,
+				13CA3D5022C53195000F6D37 /* PostRemoteProvider.swift in Sources */,
 				13CA3D3F22C52EA6000F6D37 /* Address.swift in Sources */,
 				13CA3D4122C52EC0000F6D37 /* Comment.swift in Sources */,
 				13CA3D4922C52F6A000F6D37 /* User.swift in Sources */,
+				13CA3D5922C5359A000F6D37 /* Reactive+DataRequest.swift in Sources */,
+				13CA3D4E22C53129000F6D37 /* PostRouter.swift in Sources */,
 				13CA3D4522C52EEE000F6D37 /* Location.swift in Sources */,
 				13CA3D4322C52ED6000F6D37 /* Company.swift in Sources */,
+				13CA3D5222C531EF000F6D37 /* RemoteProviderProtocol.swift in Sources */,
 				13CA3D4722C52F3E000F6D37 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
