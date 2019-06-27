@@ -16,7 +16,6 @@ public protocol PostProviderProtocol: class {
 }
 
 public final class PostProvider: PostProviderProtocol {
-    
     let remote: PostRemoteProviderProtocol
     let local: PostLocalProviderProtocol
     
