@@ -15,6 +15,26 @@
 		13CA3C7922C5292F000F6D37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CA3C7722C5292F000F6D37 /* LaunchScreen.storyboard */; };
 		13CA3C8422C5292F000F6D37 /* BabylonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3C8322C5292F000F6D37 /* BabylonTests.swift */; };
 		13CA3C8F22C5292F000F6D37 /* BabylonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3C8E22C5292F000F6D37 /* BabylonUITests.swift */; };
+		13CA3CAA22C52941000F6D37 /* BabylonCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CA122C52941000F6D37 /* BabylonCommon.framework */; };
+		13CA3CB122C52941000F6D37 /* BabylonCommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3CB022C52941000F6D37 /* BabylonCommonTests.swift */; };
+		13CA3CB322C52941000F6D37 /* BabylonCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CA3CA322C52941000F6D37 /* BabylonCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13CA3CB622C52941000F6D37 /* BabylonCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CA122C52941000F6D37 /* BabylonCommon.framework */; };
+		13CA3CB722C52941000F6D37 /* BabylonCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CA122C52941000F6D37 /* BabylonCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		13CA3CCD22C5294E000F6D37 /* BabylonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CC422C5294E000F6D37 /* BabylonModels.framework */; };
+		13CA3CD422C5294E000F6D37 /* BabylonModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3CD322C5294E000F6D37 /* BabylonModelsTests.swift */; };
+		13CA3CD622C5294E000F6D37 /* BabylonModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CA3CC622C5294E000F6D37 /* BabylonModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13CA3CD922C5294E000F6D37 /* BabylonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CC422C5294E000F6D37 /* BabylonModels.framework */; };
+		13CA3CDA22C5294E000F6D37 /* BabylonModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CC422C5294E000F6D37 /* BabylonModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		13CA3CEF22C5295E000F6D37 /* BabylonViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CE622C5295E000F6D37 /* BabylonViewModels.framework */; };
+		13CA3CF622C5295E000F6D37 /* BabylonViewModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3CF522C5295E000F6D37 /* BabylonViewModelsTests.swift */; };
+		13CA3CF822C5295E000F6D37 /* BabylonViewModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CA3CE822C5295E000F6D37 /* BabylonViewModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13CA3CFB22C5295E000F6D37 /* BabylonViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CE622C5295E000F6D37 /* BabylonViewModels.framework */; };
+		13CA3CFC22C5295E000F6D37 /* BabylonViewModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CE622C5295E000F6D37 /* BabylonViewModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		13CA3D1122C52973000F6D37 /* BabylonViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3D0822C52973000F6D37 /* BabylonViews.framework */; };
+		13CA3D1822C52973000F6D37 /* BabylonViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3D1722C52973000F6D37 /* BabylonViewsTests.swift */; };
+		13CA3D1A22C52974000F6D37 /* BabylonViews.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CA3D0A22C52973000F6D37 /* BabylonViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13CA3D1D22C52974000F6D37 /* BabylonViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3D0822C52973000F6D37 /* BabylonViews.framework */; };
+		13CA3D1E22C52974000F6D37 /* BabylonViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3D0822C52973000F6D37 /* BabylonViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +52,108 @@
 			remoteGlobalIDString = 13CA3C6722C5292E000F6D37;
 			remoteInfo = Babylon;
 		};
+		13CA3CAB22C52941000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3CA022C52941000F6D37;
+			remoteInfo = BabylonCommon;
+		};
+		13CA3CAD22C52941000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3C6722C5292E000F6D37;
+			remoteInfo = Babylon;
+		};
+		13CA3CB422C52941000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3CA022C52941000F6D37;
+			remoteInfo = BabylonCommon;
+		};
+		13CA3CCE22C5294E000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3CC322C5294E000F6D37;
+			remoteInfo = BabylonModels;
+		};
+		13CA3CD022C5294E000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3C6722C5292E000F6D37;
+			remoteInfo = Babylon;
+		};
+		13CA3CD722C5294E000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3CC322C5294E000F6D37;
+			remoteInfo = BabylonModels;
+		};
+		13CA3CF022C5295E000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3CE522C5295E000F6D37;
+			remoteInfo = BabylonViewModels;
+		};
+		13CA3CF222C5295E000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3C6722C5292E000F6D37;
+			remoteInfo = Babylon;
+		};
+		13CA3CF922C5295E000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3CE522C5295E000F6D37;
+			remoteInfo = BabylonViewModels;
+		};
+		13CA3D1222C52973000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3D0722C52973000F6D37;
+			remoteInfo = BabylonViews;
+		};
+		13CA3D1422C52973000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3C6722C5292E000F6D37;
+			remoteInfo = Babylon;
+		};
+		13CA3D1B22C52974000F6D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13CA3C6022C5292E000F6D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13CA3D0722C52973000F6D37;
+			remoteInfo = BabylonViews;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13CA3CBB22C52941000F6D37 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				13CA3CDA22C5294E000F6D37 /* BabylonModels.framework in Embed Frameworks */,
+				13CA3CB722C52941000F6D37 /* BabylonCommon.framework in Embed Frameworks */,
+				13CA3CFC22C5295E000F6D37 /* BabylonViewModels.framework in Embed Frameworks */,
+				13CA3D1E22C52974000F6D37 /* BabylonViews.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		13CA3C6822C5292E000F6D37 /* Babylon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Babylon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +170,30 @@
 		13CA3C8A22C5292F000F6D37 /* BabylonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabylonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CA3C8E22C5292F000F6D37 /* BabylonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabylonUITests.swift; sourceTree = "<group>"; };
 		13CA3C9022C5292F000F6D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CA3CA122C52941000F6D37 /* BabylonCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BabylonCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13CA3CA322C52941000F6D37 /* BabylonCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BabylonCommon.h; sourceTree = "<group>"; };
+		13CA3CA422C52941000F6D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CA3CA922C52941000F6D37 /* BabylonCommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabylonCommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13CA3CB022C52941000F6D37 /* BabylonCommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabylonCommonTests.swift; sourceTree = "<group>"; };
+		13CA3CB222C52941000F6D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CA3CC422C5294E000F6D37 /* BabylonModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BabylonModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13CA3CC622C5294E000F6D37 /* BabylonModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BabylonModels.h; sourceTree = "<group>"; };
+		13CA3CC722C5294E000F6D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CA3CCC22C5294E000F6D37 /* BabylonModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabylonModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13CA3CD322C5294E000F6D37 /* BabylonModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabylonModelsTests.swift; sourceTree = "<group>"; };
+		13CA3CD522C5294E000F6D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CA3CE622C5295E000F6D37 /* BabylonViewModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BabylonViewModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13CA3CE822C5295E000F6D37 /* BabylonViewModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BabylonViewModels.h; sourceTree = "<group>"; };
+		13CA3CE922C5295E000F6D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CA3CEE22C5295E000F6D37 /* BabylonViewModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabylonViewModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13CA3CF522C5295E000F6D37 /* BabylonViewModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabylonViewModelsTests.swift; sourceTree = "<group>"; };
+		13CA3CF722C5295E000F6D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CA3D0822C52973000F6D37 /* BabylonViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BabylonViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13CA3D0A22C52973000F6D37 /* BabylonViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BabylonViews.h; sourceTree = "<group>"; };
+		13CA3D0B22C52973000F6D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CA3D1022C52973000F6D37 /* BabylonViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabylonViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13CA3D1722C52973000F6D37 /* BabylonViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabylonViewsTests.swift; sourceTree = "<group>"; };
+		13CA3D1922C52973000F6D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +201,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13CA3CD922C5294E000F6D37 /* BabylonModels.framework in Frameworks */,
+				13CA3CB622C52941000F6D37 /* BabylonCommon.framework in Frameworks */,
+				13CA3CFB22C5295E000F6D37 /* BabylonViewModels.framework in Frameworks */,
+				13CA3D1D22C52974000F6D37 /* BabylonViews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +222,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13CA3C9E22C52941000F6D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CA622C52941000F6D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CA3CAA22C52941000F6D37 /* BabylonCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CC122C5294E000F6D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CC922C5294E000F6D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CA3CCD22C5294E000F6D37 /* BabylonModels.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CE322C5295E000F6D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CEB22C5295E000F6D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CA3CEF22C5295E000F6D37 /* BabylonViewModels.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3D0522C52973000F6D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3D0D22C52973000F6D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CA3D1122C52973000F6D37 /* BabylonViews.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +291,14 @@
 				13CA3C6A22C5292E000F6D37 /* Babylon */,
 				13CA3C8222C5292F000F6D37 /* BabylonTests */,
 				13CA3C8D22C5292F000F6D37 /* BabylonUITests */,
+				13CA3CA222C52941000F6D37 /* BabylonCommon */,
+				13CA3CAF22C52941000F6D37 /* BabylonCommonTests */,
+				13CA3CC522C5294E000F6D37 /* BabylonModels */,
+				13CA3CD222C5294E000F6D37 /* BabylonModelsTests */,
+				13CA3CE722C5295E000F6D37 /* BabylonViewModels */,
+				13CA3CF422C5295E000F6D37 /* BabylonViewModelsTests */,
+				13CA3D0922C52973000F6D37 /* BabylonViews */,
+				13CA3D1622C52973000F6D37 /* BabylonViewsTests */,
 				13CA3C6922C5292E000F6D37 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +309,14 @@
 				13CA3C6822C5292E000F6D37 /* Babylon.app */,
 				13CA3C7F22C5292F000F6D37 /* BabylonTests.xctest */,
 				13CA3C8A22C5292F000F6D37 /* BabylonUITests.xctest */,
+				13CA3CA122C52941000F6D37 /* BabylonCommon.framework */,
+				13CA3CA922C52941000F6D37 /* BabylonCommonTests.xctest */,
+				13CA3CC422C5294E000F6D37 /* BabylonModels.framework */,
+				13CA3CCC22C5294E000F6D37 /* BabylonModelsTests.xctest */,
+				13CA3CE622C5295E000F6D37 /* BabylonViewModels.framework */,
+				13CA3CEE22C5295E000F6D37 /* BabylonViewModelsTests.xctest */,
+				13CA3D0822C52973000F6D37 /* BabylonViews.framework */,
+				13CA3D1022C52973000F6D37 /* BabylonViewsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,7 +353,114 @@
 			path = BabylonUITests;
 			sourceTree = "<group>";
 		};
+		13CA3CA222C52941000F6D37 /* BabylonCommon */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3CA322C52941000F6D37 /* BabylonCommon.h */,
+				13CA3CA422C52941000F6D37 /* Info.plist */,
+			);
+			path = BabylonCommon;
+			sourceTree = "<group>";
+		};
+		13CA3CAF22C52941000F6D37 /* BabylonCommonTests */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3CB022C52941000F6D37 /* BabylonCommonTests.swift */,
+				13CA3CB222C52941000F6D37 /* Info.plist */,
+			);
+			path = BabylonCommonTests;
+			sourceTree = "<group>";
+		};
+		13CA3CC522C5294E000F6D37 /* BabylonModels */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3CC622C5294E000F6D37 /* BabylonModels.h */,
+				13CA3CC722C5294E000F6D37 /* Info.plist */,
+			);
+			path = BabylonModels;
+			sourceTree = "<group>";
+		};
+		13CA3CD222C5294E000F6D37 /* BabylonModelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3CD322C5294E000F6D37 /* BabylonModelsTests.swift */,
+				13CA3CD522C5294E000F6D37 /* Info.plist */,
+			);
+			path = BabylonModelsTests;
+			sourceTree = "<group>";
+		};
+		13CA3CE722C5295E000F6D37 /* BabylonViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3CE822C5295E000F6D37 /* BabylonViewModels.h */,
+				13CA3CE922C5295E000F6D37 /* Info.plist */,
+			);
+			path = BabylonViewModels;
+			sourceTree = "<group>";
+		};
+		13CA3CF422C5295E000F6D37 /* BabylonViewModelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3CF522C5295E000F6D37 /* BabylonViewModelsTests.swift */,
+				13CA3CF722C5295E000F6D37 /* Info.plist */,
+			);
+			path = BabylonViewModelsTests;
+			sourceTree = "<group>";
+		};
+		13CA3D0922C52973000F6D37 /* BabylonViews */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D0A22C52973000F6D37 /* BabylonViews.h */,
+				13CA3D0B22C52973000F6D37 /* Info.plist */,
+			);
+			path = BabylonViews;
+			sourceTree = "<group>";
+		};
+		13CA3D1622C52973000F6D37 /* BabylonViewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3D1722C52973000F6D37 /* BabylonViewsTests.swift */,
+				13CA3D1922C52973000F6D37 /* Info.plist */,
+			);
+			path = BabylonViewsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		13CA3C9C22C52941000F6D37 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CA3CB322C52941000F6D37 /* BabylonCommon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CBF22C5294E000F6D37 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CA3CD622C5294E000F6D37 /* BabylonModels.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CE122C5295E000F6D37 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CA3CF822C5295E000F6D37 /* BabylonViewModels.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3D0322C52973000F6D37 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CA3D1A22C52974000F6D37 /* BabylonViews.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		13CA3C6722C5292E000F6D37 /* Babylon */ = {
@@ -138,10 +470,15 @@
 				13CA3C6422C5292E000F6D37 /* Sources */,
 				13CA3C6522C5292E000F6D37 /* Frameworks */,
 				13CA3C6622C5292E000F6D37 /* Resources */,
+				13CA3CBB22C52941000F6D37 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				13CA3CB522C52941000F6D37 /* PBXTargetDependency */,
+				13CA3CD822C5294E000F6D37 /* PBXTargetDependency */,
+				13CA3CFA22C5295E000F6D37 /* PBXTargetDependency */,
+				13CA3D1C22C52974000F6D37 /* PBXTargetDependency */,
 			);
 			name = Babylon;
 			productName = Babylon;
@@ -184,6 +521,154 @@
 			productReference = 13CA3C8A22C5292F000F6D37 /* BabylonUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		13CA3CA022C52941000F6D37 /* BabylonCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13CA3CB822C52941000F6D37 /* Build configuration list for PBXNativeTarget "BabylonCommon" */;
+			buildPhases = (
+				13CA3C9C22C52941000F6D37 /* Headers */,
+				13CA3C9D22C52941000F6D37 /* Sources */,
+				13CA3C9E22C52941000F6D37 /* Frameworks */,
+				13CA3C9F22C52941000F6D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabylonCommon;
+			productName = BabylonCommon;
+			productReference = 13CA3CA122C52941000F6D37 /* BabylonCommon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		13CA3CA822C52941000F6D37 /* BabylonCommonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13CA3CBC22C52941000F6D37 /* Build configuration list for PBXNativeTarget "BabylonCommonTests" */;
+			buildPhases = (
+				13CA3CA522C52941000F6D37 /* Sources */,
+				13CA3CA622C52941000F6D37 /* Frameworks */,
+				13CA3CA722C52941000F6D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13CA3CAC22C52941000F6D37 /* PBXTargetDependency */,
+				13CA3CAE22C52941000F6D37 /* PBXTargetDependency */,
+			);
+			name = BabylonCommonTests;
+			productName = BabylonCommonTests;
+			productReference = 13CA3CA922C52941000F6D37 /* BabylonCommonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13CA3CC322C5294E000F6D37 /* BabylonModels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13CA3CDB22C5294E000F6D37 /* Build configuration list for PBXNativeTarget "BabylonModels" */;
+			buildPhases = (
+				13CA3CBF22C5294E000F6D37 /* Headers */,
+				13CA3CC022C5294E000F6D37 /* Sources */,
+				13CA3CC122C5294E000F6D37 /* Frameworks */,
+				13CA3CC222C5294E000F6D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabylonModels;
+			productName = BabylonModels;
+			productReference = 13CA3CC422C5294E000F6D37 /* BabylonModels.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		13CA3CCB22C5294E000F6D37 /* BabylonModelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13CA3CDE22C5294E000F6D37 /* Build configuration list for PBXNativeTarget "BabylonModelsTests" */;
+			buildPhases = (
+				13CA3CC822C5294E000F6D37 /* Sources */,
+				13CA3CC922C5294E000F6D37 /* Frameworks */,
+				13CA3CCA22C5294E000F6D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13CA3CCF22C5294E000F6D37 /* PBXTargetDependency */,
+				13CA3CD122C5294E000F6D37 /* PBXTargetDependency */,
+			);
+			name = BabylonModelsTests;
+			productName = BabylonModelsTests;
+			productReference = 13CA3CCC22C5294E000F6D37 /* BabylonModelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13CA3CE522C5295E000F6D37 /* BabylonViewModels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13CA3CFD22C5295E000F6D37 /* Build configuration list for PBXNativeTarget "BabylonViewModels" */;
+			buildPhases = (
+				13CA3CE122C5295E000F6D37 /* Headers */,
+				13CA3CE222C5295E000F6D37 /* Sources */,
+				13CA3CE322C5295E000F6D37 /* Frameworks */,
+				13CA3CE422C5295E000F6D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabylonViewModels;
+			productName = BabylonViewModels;
+			productReference = 13CA3CE622C5295E000F6D37 /* BabylonViewModels.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		13CA3CED22C5295E000F6D37 /* BabylonViewModelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13CA3D0022C5295E000F6D37 /* Build configuration list for PBXNativeTarget "BabylonViewModelsTests" */;
+			buildPhases = (
+				13CA3CEA22C5295E000F6D37 /* Sources */,
+				13CA3CEB22C5295E000F6D37 /* Frameworks */,
+				13CA3CEC22C5295E000F6D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13CA3CF122C5295E000F6D37 /* PBXTargetDependency */,
+				13CA3CF322C5295E000F6D37 /* PBXTargetDependency */,
+			);
+			name = BabylonViewModelsTests;
+			productName = BabylonViewModelsTests;
+			productReference = 13CA3CEE22C5295E000F6D37 /* BabylonViewModelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13CA3D0722C52973000F6D37 /* BabylonViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13CA3D1F22C52974000F6D37 /* Build configuration list for PBXNativeTarget "BabylonViews" */;
+			buildPhases = (
+				13CA3D0322C52973000F6D37 /* Headers */,
+				13CA3D0422C52973000F6D37 /* Sources */,
+				13CA3D0522C52973000F6D37 /* Frameworks */,
+				13CA3D0622C52973000F6D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabylonViews;
+			productName = BabylonViews;
+			productReference = 13CA3D0822C52973000F6D37 /* BabylonViews.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		13CA3D0F22C52973000F6D37 /* BabylonViewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13CA3D2222C52974000F6D37 /* Build configuration list for PBXNativeTarget "BabylonViewsTests" */;
+			buildPhases = (
+				13CA3D0C22C52973000F6D37 /* Sources */,
+				13CA3D0D22C52973000F6D37 /* Frameworks */,
+				13CA3D0E22C52973000F6D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13CA3D1322C52973000F6D37 /* PBXTargetDependency */,
+				13CA3D1522C52973000F6D37 /* PBXTargetDependency */,
+			);
+			name = BabylonViewsTests;
+			productName = BabylonViewsTests;
+			productReference = 13CA3D1022C52973000F6D37 /* BabylonViewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +690,34 @@
 						CreatedOnToolsVersion = 10.2.1;
 						TestTargetID = 13CA3C6722C5292E000F6D37;
 					};
+					13CA3CA022C52941000F6D37 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					13CA3CA822C52941000F6D37 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 13CA3C6722C5292E000F6D37;
+					};
+					13CA3CC322C5294E000F6D37 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					13CA3CCB22C5294E000F6D37 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 13CA3C6722C5292E000F6D37;
+					};
+					13CA3CE522C5295E000F6D37 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					13CA3CED22C5295E000F6D37 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 13CA3C6722C5292E000F6D37;
+					};
+					13CA3D0722C52973000F6D37 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					13CA3D0F22C52973000F6D37 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 13CA3C6722C5292E000F6D37;
+					};
 				};
 			};
 			buildConfigurationList = 13CA3C6322C5292E000F6D37 /* Build configuration list for PBXProject "Babylon" */;
@@ -221,8 +734,16 @@
 			projectRoot = "";
 			targets = (
 				13CA3C6722C5292E000F6D37 /* Babylon */,
+				13CA3CA022C52941000F6D37 /* BabylonCommon */,
+				13CA3CC322C5294E000F6D37 /* BabylonModels */,
+				13CA3CE522C5295E000F6D37 /* BabylonViewModels */,
+				13CA3D0722C52973000F6D37 /* BabylonViews */,
 				13CA3C7E22C5292F000F6D37 /* BabylonTests */,
 				13CA3C8922C5292F000F6D37 /* BabylonUITests */,
+				13CA3CA822C52941000F6D37 /* BabylonCommonTests */,
+				13CA3CCB22C5294E000F6D37 /* BabylonModelsTests */,
+				13CA3CED22C5295E000F6D37 /* BabylonViewModelsTests */,
+				13CA3D0F22C52973000F6D37 /* BabylonViewsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +767,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		13CA3C8822C5292F000F6D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3C9F22C52941000F6D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CA722C52941000F6D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CC222C5294E000F6D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CCA22C5294E000F6D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CE422C5295E000F6D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CEC22C5295E000F6D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3D0622C52973000F6D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3D0E22C52973000F6D37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,6 +858,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13CA3C9D22C52941000F6D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CA522C52941000F6D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CA3CB122C52941000F6D37 /* BabylonCommonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CC022C5294E000F6D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CC822C5294E000F6D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CA3CD422C5294E000F6D37 /* BabylonModelsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CE222C5295E000F6D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3CEA22C5295E000F6D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CA3CF622C5295E000F6D37 /* BabylonViewModelsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3D0422C52973000F6D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13CA3D0C22C52973000F6D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13CA3D1822C52973000F6D37 /* BabylonViewsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +930,66 @@
 			isa = PBXTargetDependency;
 			target = 13CA3C6722C5292E000F6D37 /* Babylon */;
 			targetProxy = 13CA3C8B22C5292F000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3CAC22C52941000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3CA022C52941000F6D37 /* BabylonCommon */;
+			targetProxy = 13CA3CAB22C52941000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3CAE22C52941000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3C6722C5292E000F6D37 /* Babylon */;
+			targetProxy = 13CA3CAD22C52941000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3CB522C52941000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3CA022C52941000F6D37 /* BabylonCommon */;
+			targetProxy = 13CA3CB422C52941000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3CCF22C5294E000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3CC322C5294E000F6D37 /* BabylonModels */;
+			targetProxy = 13CA3CCE22C5294E000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3CD122C5294E000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3C6722C5292E000F6D37 /* Babylon */;
+			targetProxy = 13CA3CD022C5294E000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3CD822C5294E000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3CC322C5294E000F6D37 /* BabylonModels */;
+			targetProxy = 13CA3CD722C5294E000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3CF122C5295E000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3CE522C5295E000F6D37 /* BabylonViewModels */;
+			targetProxy = 13CA3CF022C5295E000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3CF322C5295E000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3C6722C5292E000F6D37 /* Babylon */;
+			targetProxy = 13CA3CF222C5295E000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3CFA22C5295E000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3CE522C5295E000F6D37 /* BabylonViewModels */;
+			targetProxy = 13CA3CF922C5295E000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3D1322C52973000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3D0722C52973000F6D37 /* BabylonViews */;
+			targetProxy = 13CA3D1222C52973000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3D1522C52973000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3C6722C5292E000F6D37 /* Babylon */;
+			targetProxy = 13CA3D1422C52973000F6D37 /* PBXContainerItemProxy */;
+		};
+		13CA3D1C22C52974000F6D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13CA3D0722C52973000F6D37 /* BabylonViews */;
+			targetProxy = 13CA3D1B22C52974000F6D37 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -550,6 +1247,390 @@
 			};
 			name = Release;
 		};
+		13CA3CB922C52941000F6D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BabylonCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13CA3CBA22C52941000F6D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BabylonCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		13CA3CBD22C52941000F6D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = BabylonCommonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonCommonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Babylon.app/Babylon";
+			};
+			name = Debug;
+		};
+		13CA3CBE22C52941000F6D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = BabylonCommonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonCommonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Babylon.app/Babylon";
+			};
+			name = Release;
+		};
+		13CA3CDC22C5294E000F6D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BabylonModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13CA3CDD22C5294E000F6D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BabylonModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		13CA3CDF22C5294E000F6D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = BabylonModelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonModelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Babylon.app/Babylon";
+			};
+			name = Debug;
+		};
+		13CA3CE022C5294E000F6D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = BabylonModelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonModelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Babylon.app/Babylon";
+			};
+			name = Release;
+		};
+		13CA3CFE22C5295E000F6D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BabylonViewModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonViewModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13CA3CFF22C5295E000F6D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BabylonViewModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonViewModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		13CA3D0122C5295E000F6D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = BabylonViewModelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonViewModelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Babylon.app/Babylon";
+			};
+			name = Debug;
+		};
+		13CA3D0222C5295E000F6D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = BabylonViewModelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonViewModelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Babylon.app/Babylon";
+			};
+			name = Release;
+		};
+		13CA3D2022C52974000F6D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BabylonViews/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonViews;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		13CA3D2122C52974000F6D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BabylonViews/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonViews;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		13CA3D2322C52974000F6D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = BabylonViewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonViewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Babylon.app/Babylon";
+			};
+			name = Debug;
+		};
+		13CA3D2422C52974000F6D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
+				INFOPLIST_FILE = BabylonViewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonViewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Babylon.app/Babylon";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -585,6 +1666,78 @@
 			buildConfigurations = (
 				13CA3C9A22C5292F000F6D37 /* Debug */,
 				13CA3C9B22C5292F000F6D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13CA3CB822C52941000F6D37 /* Build configuration list for PBXNativeTarget "BabylonCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CA3CB922C52941000F6D37 /* Debug */,
+				13CA3CBA22C52941000F6D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13CA3CBC22C52941000F6D37 /* Build configuration list for PBXNativeTarget "BabylonCommonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CA3CBD22C52941000F6D37 /* Debug */,
+				13CA3CBE22C52941000F6D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13CA3CDB22C5294E000F6D37 /* Build configuration list for PBXNativeTarget "BabylonModels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CA3CDC22C5294E000F6D37 /* Debug */,
+				13CA3CDD22C5294E000F6D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13CA3CDE22C5294E000F6D37 /* Build configuration list for PBXNativeTarget "BabylonModelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CA3CDF22C5294E000F6D37 /* Debug */,
+				13CA3CE022C5294E000F6D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13CA3CFD22C5295E000F6D37 /* Build configuration list for PBXNativeTarget "BabylonViewModels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CA3CFE22C5295E000F6D37 /* Debug */,
+				13CA3CFF22C5295E000F6D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13CA3D0022C5295E000F6D37 /* Build configuration list for PBXNativeTarget "BabylonViewModelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CA3D0122C5295E000F6D37 /* Debug */,
+				13CA3D0222C5295E000F6D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13CA3D1F22C52974000F6D37 /* Build configuration list for PBXNativeTarget "BabylonViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CA3D2022C52974000F6D37 /* Debug */,
+				13CA3D2122C52974000F6D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13CA3D2222C52974000F6D37 /* Build configuration list for PBXNativeTarget "BabylonViewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13CA3D2322C52974000F6D37 /* Debug */,
+				13CA3D2422C52974000F6D37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
