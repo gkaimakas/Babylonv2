@@ -9,6 +9,22 @@
 import Foundation
 
 public protocol ProviderBundleProtocol {
-    var comment: CommentProvider { get }
-    var post: PostProvider { get }
+    var comment: CommentProviderProtocol { get }
+    var post: PostProviderProtocol { get }
+    var user: UserProviderProtocol { get }
+}
+
+public final class ProviderBundle: ProviderBundleProtocol {
+    public let comment: CommentProviderProtocol
+    public let post: PostProviderProtocol
+    public let user: UserProviderProtocol
+    
+    public init(comment: CommentProviderProtocol,
+                post: PostProviderProtocol,
+                user: UserProviderProtocol) {
+        
+        self.comment = comment
+        self.post = post
+        self.user = user
+    }
 }
