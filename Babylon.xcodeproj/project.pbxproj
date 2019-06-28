@@ -41,6 +41,23 @@
 		13B3100522C6426D00FDDF21 /* MockAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3100022C641C700FDDF21 /* MockAction.swift */; };
 		13B3100622C6426E00FDDF21 /* MockAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3100022C641C700FDDF21 /* MockAction.swift */; };
 		13B3100822C6458600FDDF21 /* Response.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B3100722C6458600FDDF21 /* Response.xcassets */; };
+		13B3100D22C6474D00FDDF21 /* MockedPostProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3100C22C6474D00FDDF21 /* MockedPostProvider.swift */; };
+		13B3100F22C647E700FDDF21 /* MockedCommentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3100E22C647E700FDDF21 /* MockedCommentProvider.swift */; };
+		13B3101122C6485900FDDF21 /* MockedUserProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3101022C6485900FDDF21 /* MockedUserProvider.swift */; };
+		13B3101322C648DD00FDDF21 /* PostViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3101222C648DD00FDDF21 /* PostViewModelSpec.swift */; };
+		13B3101422C648F700FDDF21 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FF922C6406300FDDF21 /* User.swift */; };
+		13B3101622C6490000FDDF21 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3101522C6490000FDDF21 /* Comment.swift */; };
+		13B3101822C649EC00FDDF21 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3101722C649EC00FDDF21 /* Post.swift */; };
+		13B3101922C649EE00FDDF21 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3101722C649EC00FDDF21 /* Post.swift */; };
+		13B3101A22C649EF00FDDF21 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3101722C649EC00FDDF21 /* Post.swift */; };
+		13B3101B22C649F000FDDF21 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3101722C649EC00FDDF21 /* Post.swift */; };
+		13B3101C22C649F100FDDF21 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3101722C649EC00FDDF21 /* Post.swift */; };
+		13B3101D22C649F200FDDF21 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3101722C649EC00FDDF21 /* Post.swift */; };
+		13B3101E22C64B0F00FDDF21 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3101522C6490000FDDF21 /* Comment.swift */; };
+		13B3101F22C64B1000FDDF21 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3101522C6490000FDDF21 /* Comment.swift */; };
+		13B3102022C64B1100FDDF21 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3101522C6490000FDDF21 /* Comment.swift */; };
+		13B3102122C64B1100FDDF21 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3101522C6490000FDDF21 /* Comment.swift */; };
+		13B3102222C64B1200FDDF21 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3101522C6490000FDDF21 /* Comment.swift */; };
 		13CA3C6C22C5292E000F6D37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3C6B22C5292E000F6D37 /* AppDelegate.swift */; };
 		13CA3C6E22C5292E000F6D37 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3C6D22C5292E000F6D37 /* PostListViewController.swift */; };
 		13CA3C7122C5292E000F6D37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CA3C6F22C5292E000F6D37 /* Main.storyboard */; };
@@ -59,7 +76,6 @@
 		13CA3CD922C5294E000F6D37 /* BabylonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CC422C5294E000F6D37 /* BabylonModels.framework */; };
 		13CA3CDA22C5294E000F6D37 /* BabylonModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CC422C5294E000F6D37 /* BabylonModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13CA3CEF22C5295E000F6D37 /* BabylonViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CE622C5295E000F6D37 /* BabylonViewModels.framework */; };
-		13CA3CF622C5295E000F6D37 /* BabylonViewModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3CF522C5295E000F6D37 /* BabylonViewModelsTests.swift */; };
 		13CA3CF822C5295E000F6D37 /* BabylonViewModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CA3CE822C5295E000F6D37 /* BabylonViewModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13CA3CFB22C5295E000F6D37 /* BabylonViewModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CE622C5295E000F6D37 /* BabylonViewModels.framework */; };
 		13CA3CFC22C5295E000F6D37 /* BabylonViewModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CE622C5295E000F6D37 /* BabylonViewModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -307,6 +323,12 @@
 		13B30FFD22C6413200FDDF21 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		13B3100022C641C700FDDF21 /* MockAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAction.swift; sourceTree = "<group>"; };
 		13B3100722C6458600FDDF21 /* Response.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Response.xcassets; sourceTree = "<group>"; };
+		13B3100C22C6474D00FDDF21 /* MockedPostProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedPostProvider.swift; sourceTree = "<group>"; };
+		13B3100E22C647E700FDDF21 /* MockedCommentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedCommentProvider.swift; sourceTree = "<group>"; };
+		13B3101022C6485900FDDF21 /* MockedUserProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedUserProvider.swift; sourceTree = "<group>"; };
+		13B3101222C648DD00FDDF21 /* PostViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModelSpec.swift; sourceTree = "<group>"; };
+		13B3101522C6490000FDDF21 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		13B3101722C649EC00FDDF21 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		13CA3C6822C5292E000F6D37 /* Babylon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Babylon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CA3C6B22C5292E000F6D37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13CA3C6D22C5292E000F6D37 /* PostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
@@ -336,7 +358,6 @@
 		13CA3CE822C5295E000F6D37 /* BabylonViewModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BabylonViewModels.h; sourceTree = "<group>"; };
 		13CA3CE922C5295E000F6D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13CA3CEE22C5295E000F6D37 /* BabylonViewModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabylonViewModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		13CA3CF522C5295E000F6D37 /* BabylonViewModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabylonViewModelsTests.swift; sourceTree = "<group>"; };
 		13CA3CF722C5295E000F6D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13CA3D0822C52973000F6D37 /* BabylonViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BabylonViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CA3D0A22C52973000F6D37 /* BabylonViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BabylonViews.h; sourceTree = "<group>"; };
@@ -637,6 +658,8 @@
 			children = (
 				13B30FF922C6406300FDDF21 /* User.swift */,
 				13B30FFD22C6413200FDDF21 /* Network.swift */,
+				13B3101522C6490000FDDF21 /* Comment.swift */,
+				13B3101722C649EC00FDDF21 /* Post.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -645,6 +668,16 @@
 			isa = PBXGroup;
 			children = (
 				13B3100022C641C700FDDF21 /* MockAction.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		13B3100B22C6470A00FDDF21 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				13B3100C22C6474D00FDDF21 /* MockedPostProvider.swift */,
+				13B3100E22C647E700FDDF21 /* MockedCommentProvider.swift */,
+				13B3101022C6485900FDDF21 /* MockedUserProvider.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -783,7 +816,8 @@
 		13CA3CF422C5295E000F6D37 /* BabylonViewModelsTests */ = {
 			isa = PBXGroup;
 			children = (
-				13CA3CF522C5295E000F6D37 /* BabylonViewModelsTests.swift */,
+				13B3101222C648DD00FDDF21 /* PostViewModelSpec.swift */,
+				13B3100B22C6470A00FDDF21 /* Helpers */,
 				13CA3CF722C5295E000F6D37 /* Info.plist */,
 			);
 			path = BabylonViewModelsTests;
@@ -1885,8 +1919,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B3101B22C649F000FDDF21 /* Post.swift in Sources */,
 				13CA3C8422C5292F000F6D37 /* BabylonTests.swift in Sources */,
 				13B3100622C6426E00FDDF21 /* MockAction.swift in Sources */,
+				13B3102222C64B1200FDDF21 /* Comment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1894,8 +1930,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B3101A22C649EF00FDDF21 /* Post.swift in Sources */,
 				13CA3C8F22C5292F000F6D37 /* BabylonUITests.swift in Sources */,
 				13B3100522C6426D00FDDF21 /* MockAction.swift in Sources */,
+				13B3102122C64B1100FDDF21 /* Comment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1917,8 +1955,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B3101922C649EE00FDDF21 /* Post.swift in Sources */,
 				13CA3CB122C52941000F6D37 /* BabylonCommonTests.swift in Sources */,
 				13B3100122C641C700FDDF21 /* MockAction.swift in Sources */,
+				13B3102022C64B1100FDDF21 /* Comment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1963,9 +2003,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B30FFC22C640FF00FDDF21 /* UserRemoteProviderSpec.swift in Sources */,
+				13B3101622C6490000FDDF21 /* Comment.swift in Sources */,
 				13B30FFA22C6406300FDDF21 /* User.swift in Sources */,
 				13B30FFE22C6413200FDDF21 /* Network.swift in Sources */,
 				13B3100222C6426A00FDDF21 /* MockAction.swift in Sources */,
+				13B3101822C649EC00FDDF21 /* Post.swift in Sources */,
 				13B30FF122C63D1D00FDDF21 /* UserLocalProviderSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1988,8 +2030,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13CA3CF622C5295E000F6D37 /* BabylonViewModelsTests.swift in Sources */,
 				13B3100322C6426B00FDDF21 /* MockAction.swift in Sources */,
+				13B3100F22C647E700FDDF21 /* MockedCommentProvider.swift in Sources */,
+				13B3101422C648F700FDDF21 /* User.swift in Sources */,
+				13B3101F22C64B1000FDDF21 /* Comment.swift in Sources */,
+				13B3101322C648DD00FDDF21 /* PostViewModelSpec.swift in Sources */,
+				13B3101122C6485900FDDF21 /* MockedUserProvider.swift in Sources */,
+				13B3101C22C649F100FDDF21 /* Post.swift in Sources */,
+				13B3100D22C6474D00FDDF21 /* MockedPostProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2011,8 +2059,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B3101D22C649F200FDDF21 /* Post.swift in Sources */,
 				13CA3D1822C52973000F6D37 /* BabylonViewsTests.swift in Sources */,
 				13B3100422C6426C00FDDF21 /* MockAction.swift in Sources */,
+				13B3101E22C64B0F00FDDF21 /* Comment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

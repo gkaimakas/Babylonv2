@@ -11,7 +11,7 @@ import BabylonCommon
 import ReactiveSwift
 
 public class PostViewModel {
-    private let _comments: MutableProperty<[CommentViewModel]>
+    let _comments: MutableProperty<[CommentViewModel]>
     
     public let id: Property<Int>
     public let title: Property<String?>
