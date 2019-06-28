@@ -17,9 +17,17 @@ public class PostListViewModel {
     private let page: Property<Int>
     private let hasMoreEntries = MutableProperty<Bool>(true)
     
+    /// Uniquness is ensured
     public var posts: Property<[PostViewModel]>
     
+    /// Fetchs posts using the specified strategy.
+    /// Pagination is used under the hood.
+    /// New posts are appended at the end of `posts`.
     public let fetchPosts: Action<FetchStrategy<[Post]>, [PostViewModel], ProviderError>
+    
+    /// Fetches posts from the backend only.
+    /// Execution will override the existing posts instead of append at the end.
+    /// Can be used for pull-to-refresh actions.
     public let forceFetchPosts: Action<Void, [PostViewModel], ProviderError>
     
     public init(providerBundle: ProviderBundleProtocol) {

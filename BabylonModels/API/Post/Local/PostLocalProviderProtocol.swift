@@ -79,7 +79,6 @@ public class PostLocalProvider: LocalProvider, PostLocalProviderProtocol {
             })}
             .mapError { LocalProviderError.persistenceFailure($0 as NSError) }
             .map { $0.map { Post($0) } }
-            .on(value: { print("local", $0.count) })
     }
     
     /// Saves or updates a post.
