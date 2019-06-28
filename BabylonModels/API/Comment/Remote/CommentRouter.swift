@@ -28,7 +28,7 @@ extension CommentRouter: URLRequestConvertible {
             
         case .fetchComments(let postId):
             return (
-                path: "https://jsonplaceholder.typicode.com/posts/\(postId)/comments",
+                path: "https://jsonplaceholder.typicode.com/comments?postId=\(postId)",
                 parameters: nil
             )
             

@@ -32,7 +32,9 @@ public class PostViewModel {
         self.user = UserViewModel(user: user)
         
         _comments = MutableProperty([])
-        comments = Property(_comments)
+        comments = _comments
+            .map { Array(Set<CommentViewModel>($0)) }
+            .map { $0.sorted(by: { $0.id.value < $1.id.value }) }
         
         let isFetchCommentsEnabled = comments.map { $0.count == 0 }
         
@@ -56,10 +58,11 @@ public class PostViewModel {
     }
     
     func bind() {
-        _comments <~ Signal.merge(
-            fetchComments.values,
-            forceFetchComments.values
-        )
+        _comments <~ fetchComments
+            .values
+        
+        _comments <~ forceFetchComments
+            .values
     }
 }
 

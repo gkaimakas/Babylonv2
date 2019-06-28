@@ -18,6 +18,17 @@ extension PostListViewController {
 
 extension PostListViewController.Destination {
     static func navigateTo() -> Action<PostListViewController.Destination, UIViewController, Never> {
-        return Action.empty
+        return Action<PostListViewController.Destination, UIViewController, Never> { destination in
+            switch destination {
+            case .postDetails(let value):
+                
+                let viewController = UIStoryboard(name: "Main", bundle: Bundle.main)
+                    .instantiateViewController(withIdentifier: "PostDetailsViewController") as! PostDetailsViewController
+
+                viewController.viewModel = value
+                
+                return SignalProducer(value: viewController)
+            }
+        }
     }
 }

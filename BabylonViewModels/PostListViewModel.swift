@@ -35,9 +35,6 @@ public class PostListViewModel {
         let fetchPostsState = page.combineLatest(with: hasMoreEntries)
         fetchPosts = Action(state: fetchPostsState, enabledIf: { $0.1 }) { (state, strategy) in
             
-            let userStrategy: FetchStrategy<User> = strategy
-                .map({ _ in { _ in true }})
-            
             let newPage = state.0 + 1
             
             return providerBundle
@@ -85,6 +82,10 @@ public class PostListViewModel {
             .values
             .map { $0.count > 0 }
         
+
+        hasMoreEntries <~ forceFetchPosts
+            .values
+            .map(value: true)
         
         _posts <~ fetchPosts
             .values

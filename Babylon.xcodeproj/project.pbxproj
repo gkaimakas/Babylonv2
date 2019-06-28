@@ -18,6 +18,12 @@
 		13B30FD922C608A600FDDF21 /* PostListViewController+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FD822C608A600FDDF21 /* PostListViewController+Presenter.swift */; };
 		13B30FDC22C6097100FDDF21 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FDB22C6097100FDDF21 /* UITableViewCell.swift */; };
 		13B30FDF22C60F1E00FDDF21 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FDE22C60F1E00FDDF21 /* PostTableViewCell.swift */; };
+		13B30FE222C628BE00FDDF21 /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FE122C628BE00FDDF21 /* PostDetailsViewController.swift */; };
+		13B30FE422C629CA00FDDF21 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FE322C629CA00FDDF21 /* UINavigationController.swift */; };
+		13B30FE622C62BF000FDDF21 /* PostDetailsViewController+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FE522C62BF000FDDF21 /* PostDetailsViewController+Presenter.swift */; };
+		13B30FE822C62BFA00FDDF21 /* PostDetailsViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FE722C62BFA00FDDF21 /* PostDetailsViewController+Section.swift */; };
+		13B30FEA22C62C0600FDDF21 /* PostDetailsViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FE922C62C0600FDDF21 /* PostDetailsViewController+Row.swift */; };
+		13B30FED22C630CE00FDDF21 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FEC22C630CE00FDDF21 /* CommentTableViewCell.swift */; };
 		13CA3C6C22C5292E000F6D37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3C6B22C5292E000F6D37 /* AppDelegate.swift */; };
 		13CA3C6E22C5292E000F6D37 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3C6D22C5292E000F6D37 /* PostListViewController.swift */; };
 		13CA3C7122C5292E000F6D37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CA3C6F22C5292E000F6D37 /* Main.storyboard */; };
@@ -273,6 +279,12 @@
 		13B30FD822C608A600FDDF21 /* PostListViewController+Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostListViewController+Presenter.swift"; sourceTree = "<group>"; };
 		13B30FDB22C6097100FDDF21 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		13B30FDE22C60F1E00FDDF21 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		13B30FE122C628BE00FDDF21 /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
+		13B30FE322C629CA00FDDF21 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		13B30FE522C62BF000FDDF21 /* PostDetailsViewController+Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostDetailsViewController+Presenter.swift"; sourceTree = "<group>"; };
+		13B30FE722C62BFA00FDDF21 /* PostDetailsViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostDetailsViewController+Section.swift"; sourceTree = "<group>"; };
+		13B30FE922C62C0600FDDF21 /* PostDetailsViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostDetailsViewController+Row.swift"; sourceTree = "<group>"; };
+		13B30FEC22C630CE00FDDF21 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		13CA3C6822C5292E000F6D37 /* Babylon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Babylon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CA3C6B22C5292E000F6D37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13CA3C6D22C5292E000F6D37 /* PostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
@@ -528,6 +540,7 @@
 		13B30FCC22C6028D00FDDF21 /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				13B30FE022C628B000FDDF21 /* Details */,
 				13B30FCD22C6029D00FDDF21 /* List */,
 			);
 			path = Post;
@@ -549,6 +562,7 @@
 			isa = PBXGroup;
 			children = (
 				13B30FDB22C6097100FDDF21 /* UITableViewCell.swift */,
+				13B30FE322C629CA00FDDF21 /* UINavigationController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -559,6 +573,25 @@
 				13B30FDE22C60F1E00FDDF21 /* PostTableViewCell.swift */,
 			);
 			path = Post;
+			sourceTree = "<group>";
+		};
+		13B30FE022C628B000FDDF21 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				13B30FE122C628BE00FDDF21 /* PostDetailsViewController.swift */,
+				13B30FE722C62BFA00FDDF21 /* PostDetailsViewController+Section.swift */,
+				13B30FE922C62C0600FDDF21 /* PostDetailsViewController+Row.swift */,
+				13B30FE522C62BF000FDDF21 /* PostDetailsViewController+Presenter.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		13B30FEB22C630BF00FDDF21 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				13B30FEC22C630CE00FDDF21 /* CommentTableViewCell.swift */,
+			);
+			path = Comment;
 			sourceTree = "<group>";
 		};
 		13CA3C5F22C5292E000F6D37 = {
@@ -696,6 +729,7 @@
 		13CA3D0922C52973000F6D37 /* BabylonViews */ = {
 			isa = PBXGroup;
 			children = (
+				13B30FEB22C630BF00FDDF21 /* Comment */,
 				13B30FDD22C60F0E00FDDF21 /* Post */,
 				13B30FDA22C6096700FDDF21 /* Extension */,
 				13B30FC622C601AD00FDDF21 /* Common */,
@@ -1668,9 +1702,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B30FEA22C62C0600FDDF21 /* PostDetailsViewController+Row.swift in Sources */,
 				13B30FC522C5FFF000FDDF21 /* UIApplication.swift in Sources */,
+				13B30FE822C62BFA00FDDF21 /* PostDetailsViewController+Section.swift in Sources */,
 				13B30FD322C603F800FDDF21 /* PostListViewController+Section.swift in Sources */,
+				13B30FE622C62BF000FDDF21 /* PostDetailsViewController+Presenter.swift in Sources */,
 				13B30FCF22C602C500FDDF21 /* PostListViewController+Destination.swift in Sources */,
+				13B30FE222C628BE00FDDF21 /* PostDetailsViewController.swift in Sources */,
 				13B30FD122C6030200FDDF21 /* PostListViewController+Row.swift in Sources */,
 				13CA3C6E22C5292E000F6D37 /* PostListViewController.swift in Sources */,
 				13B30FD922C608A600FDDF21 /* PostListViewController+Presenter.swift in Sources */,
@@ -1790,6 +1828,8 @@
 				13B30FCB22C6026000FDDF21 /* UITableViewDiffingDataSourceProtocol.swift in Sources */,
 				13B30FDC22C6097100FDDF21 /* UITableViewCell.swift in Sources */,
 				13B30FDF22C60F1E00FDDF21 /* PostTableViewCell.swift in Sources */,
+				13B30FE422C629CA00FDDF21 /* UINavigationController.swift in Sources */,
+				13B30FED22C630CE00FDDF21 /* CommentTableViewCell.swift in Sources */,
 				13B30FD722C6073600FDDF21 /* TableViewDataPresenter.swift in Sources */,
 				13B30FC922C6020800FDDF21 /* DiffingDataSourceProtocol.swift in Sources */,
 			);

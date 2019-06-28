@@ -54,14 +54,21 @@ open class TableViewDataPresenter<Section, Row>: NSObject, UITableViewDataSource
     }
     
     open func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        willDisplayRowObserver.send(value: (cell: cell, index: indexPath, row: dataSource.value(atIndexPath: indexPath)))
+        DispatchQueue.main.async {
+            self.willDisplayRowObserver.send(value: (cell: cell,
+                                                     index: indexPath,
+                                                     row: self.dataSource.value(atIndexPath: indexPath)))
+        }
     }
     
     open func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
         willDisplayFooterViewObserver.send(value: (view, section, dataSource.value(forSection: section)))
     }
     
-    open func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        didSelectRowObserver.send(value: (index: indexPath, row: dataSource.value(atIndexPath: indexPath)))
+    open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        DispatchQueue.main.async {
+            self.didSelectRowObserver.send(value: (index: indexPath,
+                                                   row: self.dataSource.value(atIndexPath: indexPath)))
+        }
     }
 }

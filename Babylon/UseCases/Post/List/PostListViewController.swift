@@ -65,12 +65,8 @@ class PostListViewController: UIViewController {
         
         setupTableView()
         bindDataSource()
+        bindNavigation()
         bindInfiniteScrolling()
-        
-        viewModel
-            .posts
-            .producer
-            .startWithValues { print($0.count) }
         
         reactive.lifetime += viewModel
             .fetchPosts
@@ -81,10 +77,18 @@ class PostListViewController: UIViewController {
     func setupTableView() {
         tableView.addSubview(refreshControl)
         refreshControl.reactive.refresh = CocoaAction(viewModel.forceFetchPosts)
+        
+        presenter
+            .willDisplayRow
+            .observeValues { (cell, index, row) in
+                if let cell = cell as? PostTableViewCell {
+                    cell.accessoryType = .disclosureIndicator
+                }
+        }
     }
     
     func bindDataSource() {
-        reactive.lifetime += dataSource.reactive.reload(with: .bottom) <~ viewModel
+        reactive.lifetime += dataSource.reactive.reload(with: .fade) <~ viewModel
             .posts
             .producer
             .observe(on: UIScheduler())
@@ -94,6 +98,21 @@ class PostListViewController: UIViewController {
                     return ArraySection(model: .none, elements: [.post(post)])
                 }
             }
+    }
+    
+    func bindNavigation() {
+        reactive.lifetime += navigateTo.bindingTarget <~ presenter
+            .didSelectRow
+            .map { $0.row }
+            .filterMap { row -> Destination? in
+                switch row {
+                case let .post(value):
+                    return Destination.postDetails(value)
+                }
+            }
+        
+        reactive.lifetime += navigationController?.reactive.push() <~ navigateTo
+            .values
     }
     
     func bindInfiniteScrolling() {
