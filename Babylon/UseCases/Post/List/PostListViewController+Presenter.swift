@@ -11,6 +11,8 @@ import UIKit
 
 extension PostListViewController {
     class Presenter: TableViewDataPresenter<Section, Row> {
+        let cell = PostTableViewCell(style: .default, reuseIdentifier: "")
+        
         
         override init(tableView: UITableView,
                       dataSource: UITableViewDiffingDataSource<Section, Row>) {
@@ -21,7 +23,8 @@ extension PostListViewController {
             tableView.register(PostTableViewCell.self, forCellReuseIdentifier: PostTableViewCell.identifier)
         }
         
-        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        override func tableView(_ tableView: UITableView,
+                                cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: PostTableViewCell.identifier,
                                                      for: indexPath) as! PostTableViewCell
@@ -31,10 +34,6 @@ extension PostListViewController {
                 cell.apply(driver: value)
             }
             return cell
-        }
-        
-        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return UITableView.automaticDimension
         }
     }
 }

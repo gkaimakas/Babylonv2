@@ -77,6 +77,7 @@ class PostListViewController: UIViewController {
     func setupTableView() {
         tableView.addSubview(refreshControl)
         refreshControl.reactive.refresh = CocoaAction(viewModel.forceFetchPosts)
+        tableView.estimatedRowHeight = UITableView.automaticDimension
         
         presenter
             .willDisplayRow
@@ -91,7 +92,6 @@ class PostListViewController: UIViewController {
         reactive.lifetime += dataSource.reactive.reload(with: .fade) <~ viewModel
             .posts
             .producer
-            .observe(on: UIScheduler())
             .skipRepeats()
             .map { list -> [ArraySection<Section, Row>] in
                 return list.map { post -> ArraySection<Section, Row> in

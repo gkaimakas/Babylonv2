@@ -37,15 +37,6 @@ public class UITableViewDiffingDataSource<Section: Differentiable, Value: Differ
             let oldData = self.innerData.value
             let changeSet = StagedChangeset(source: oldData, target: newData)
             
-            if skipRepeats == true {
-                let oldId = oldData.map({ (section) -> String in return "\(section.model.differenceIdentifier)" + section.elements.map { "\($0.differenceIdentifier)" }.joined() }).joined()
-                let newId = newData.map({ (section) -> String in return "\(section.model.differenceIdentifier)" + section.elements.map { "\($0.differenceIdentifier)" }.joined() }).joined()
-                
-                if oldId == newId {
-                    return
-                }
-            }
-            
             self.tableView.reload(using: changeSet,
                                   with: animation) { [weak self] (value) in
                                     self?.update(data: value)
