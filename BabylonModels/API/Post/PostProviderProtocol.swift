@@ -11,7 +11,23 @@ import BabylonCommon
 import ReactiveSwift
 
 public protocol PostProviderProtocol: class {
+    /// Fetches a post.
+    ///
+    /// The origin of the data is determined by `strategy`.
+    ///
+    /// - parameters:
+    ///   - id: The id of the post.
+    ///   - strategy: The strategy by which to fetch the data
     func fetchPost(id: Int, strategy: FetchStrategy<Post>) -> SignalProducer<FetchResult<Post>, ProviderError>
+    
+    /// Fetches a list of posts using pagination.
+    ///
+    /// The origin of the data is determined by `strategy`.
+    ///
+    /// - parameters:
+    ///   - page: pagination parameter.
+    ///   - limit: pagination parameter
+    ///   - strategy: The strategy by which to fetch the data
     func fetchPosts(page: Int, limit: Int, strategy: FetchStrategy<[Post]>) -> SignalProducer<FetchResult<[Post]>, ProviderError>
 }
 
@@ -26,6 +42,13 @@ public final class PostProvider: PostProviderProtocol {
         self.local = local
     }
     
+    /// Fetches a post.
+    ///
+    /// The origin of the data is determined by `strategy`.
+    ///
+    /// - parameters:
+    ///   - id: The id of the post.
+    ///   - strategy: The strategy by which to fetch the data
     public func fetchPost(id: Int, strategy: FetchStrategy<Post>) -> SignalProducer<FetchResult<Post>, ProviderError> {
         
         switch strategy {
@@ -64,6 +87,14 @@ public final class PostProvider: PostProviderProtocol {
         }
     }
     
+    /// Fetches a list of posts using pagination.
+    ///
+    /// The origin of the data is determined by `strategy`.
+    ///
+    /// - parameters:
+    ///   - page: pagination parameter.
+    ///   - limit: pagination parameter
+    ///   - strategy: The strategy by which to fetch the data
     public func fetchPosts(page: Int, limit: Int, strategy: FetchStrategy<[Post]>) -> SignalProducer<FetchResult<[Post]>, ProviderError> {
         switch strategy {
         case .local:

@@ -11,6 +11,14 @@ import BabylonCommon
 import ReactiveSwift
 
 public protocol UserProviderProtocol: class {
+    
+    /// Fetches a user by the id.
+    ///
+    /// The origin of the data is determined by `strategy`.
+    ///
+    /// - parameters:
+    ///   - id: The id of the user to fetch.
+    ///   - strategy: The strategy by which to fetch the data
     func fetchUser(id: Int, strategy: FetchStrategy<User?>) -> SignalProducer<FetchResult<User?>, ProviderError>
 }
 
@@ -26,6 +34,13 @@ public final class UserProvider: UserProviderProtocol {
         self.local = local
     }
     
+    /// Fetches a user by the id.
+    ///
+    /// The origin of the data is determined by `strategy`.
+    ///
+    /// - parameters:
+    ///   - id: The id of the user to fetch.
+    ///   - strategy: The strategy by which to fetch the data
     public func fetchUser(id: Int, strategy: FetchStrategy<User?>) -> SignalProducer<FetchResult<User?>, ProviderError> {
         switch strategy {
         case .local:

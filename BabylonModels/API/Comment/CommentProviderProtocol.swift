@@ -10,7 +10,14 @@ import BabylonCommon
 import ReactiveSwift
 
 public protocol CommentProviderProtocol: class {
-    func fetchComment(id: Int, strategy: FetchStrategy<Comment>) -> SignalProducer<FetchResult<Comment>, ProviderError>
+    
+    /// Fetches a list of comments for the post with `postId`.
+    ///
+    /// The origin of the data is determined by `strategy`.
+    ///
+    /// - parameters:
+    ///   - postId: The id of the post the comments are attached.
+    ///   - strategy: The strategy by which to fetch the data
     func fetchComments(postId: Int, strategy: FetchStrategy<[Comment]>) -> SignalProducer<FetchResult<[Comment]>, ProviderError>
 }
 
@@ -26,43 +33,13 @@ public final class CommentProvider: CommentProviderProtocol {
         self.local = local
     }
     
-    public func fetchComment(id: Int, strategy: FetchStrategy<Comment>) -> SignalProducer<FetchResult<Comment>, ProviderError> {
-        switch strategy {
-        case .local:
-            return local
-                .fetchComment(id: id)
-                .map { FetchResult.local($0) }
-                .mapError { ProviderError.local($0) }
-            
-        case .remote:
-            return remote
-                .fetchComment(id: id)
-                .mapError { ProviderError.remote($0) }
-                .flatMap(.latest) { result -> SignalProducer<Comment, ProviderError> in
-                    return self.local
-                        .save(comment: result)
-                        .mapError { ProviderError.local($0) }
-                }
-                .map { FetchResult.remote($0) }
-            
-        case .merge:
-            return SignalProducer.merge(
-                fetchComment(id: id, strategy: .local),
-                fetchComment(id: id, strategy: .remote)
-            )
-            
-        case .conditional(let remoteFetch):
-            return fetchComment(id: id, strategy: .local)
-                .flatMap(.latest) { result -> SignalProducer<FetchResult<Comment>, ProviderError> in
-                    if remoteFetch(result.value) {
-                        return self.fetchComment(id: id, strategy: .remote)
-                    }
-                    
-                    return SignalProducer(value: result)
-            }
-        }
-    }
-    
+    /// Fetches a list of comments for the post with `postId`.
+    ///
+    /// The origin of the data is determined by `strategy`.
+    ///
+    /// - parameters:
+    ///   - postId: The id of the post the comments are attached.
+    ///   - strategy: The strategy by which to fetch the data
     public func fetchComments(postId: Int, strategy: FetchStrategy<[Comment]>) -> SignalProducer<FetchResult<[Comment]>, ProviderError> {
         switch strategy {
         case .local:

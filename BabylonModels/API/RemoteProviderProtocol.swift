@@ -10,11 +10,12 @@ import Alamofire
 import BabylonCommon
 import ReactiveSwift
 
+/// Common abstraction layer for all remote provider protocols.
 public protocol RemoteProviderProtocol: class {
     init(network: Network)
 }
 
-
+/// A base implementation of `RemoteProviderProtocol`.
 public class RemoteProvider: RemoteProviderProtocol {
     public let network: Network
     

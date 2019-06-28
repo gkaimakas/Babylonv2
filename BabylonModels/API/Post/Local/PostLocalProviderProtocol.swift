@@ -12,15 +12,40 @@ import BabylonCommon
 import ReactiveSwift
 
 public protocol PostLocalProviderProtocol {
+    /// Fetches a post by id from the local storage.
+    ///
+    /// - parameters:
+    ///   - id: The id of the post to fetch.
     func fetchPost(id: Int) -> SignalProducer<Post, LocalProviderError>
+    
+    /// Fetchs a list of posts from the local storage using pagination.
+    ///
+    /// - parameters:
+    ///   - page: pagination paramter.
+    ///   - limit: pagination parameter.
     func fetchPosts(page: Int, limit: Int) -> SignalProducer<[Post], LocalProviderError>
     
+    /// Saves or updates a post.
+    ///
+    /// - parameters:
+    ///   - post: The post to save or update.
     func save(post: Post) -> SignalProducer<Post, LocalProviderError>
+    
+    /// Saves or updates a list of posts.
+    ///
+    /// - parameters:
+    ///   - posts: The posts to save or update.
     func save(posts: [Post]) -> SignalProducer<[Post], LocalProviderError>
+    
+    /// Removes all posts.
     func dropAll() -> SignalProducer<Void, LocalProviderError>
 }
 
 public class PostLocalProvider: LocalProvider, PostLocalProviderProtocol {
+    /// Fetches a post by id from the local storage.
+    ///
+    /// - parameters:
+    ///   - id: The id of the post to fetch.
     public func fetchPost(id: Int) -> SignalProducer<Post, LocalProviderError> {
         return SignalProducer<PostMO?, Error> { () -> Result<PostMO?, Error> in
             return Result<PostMO?, Error>(catching: { () -> PostMO? in
@@ -40,6 +65,11 @@ public class PostLocalProvider: LocalProvider, PostLocalProviderProtocol {
         
     }
     
+    /// Fetchs a list of posts from the local storage using pagination.
+    ///
+    /// - parameters:
+    ///   - page: pagination paramter.
+    ///   - limit: pagination parameter.
     public func fetchPosts(page: Int, limit: Int) -> SignalProducer<[Post], LocalProviderError> {
         return SignalProducer<[PostMO], Error> { () -> Result<[PostMO], Error> in
             return Result<[PostMO], Error>(catching: { () -> [PostMO] in
@@ -52,6 +82,10 @@ public class PostLocalProvider: LocalProvider, PostLocalProviderProtocol {
             .on(value: { print("local", $0.count) })
     }
     
+    /// Saves or updates a post.
+    ///
+    /// - parameters:
+    ///   - post: The post to save or update.
     public func save(post: Post) -> SignalProducer<Post, LocalProviderError> {
         return SignalProducer<PostMO, Error> { () -> Result<PostMO, Error> in
             return Result<PostMO, Error>(catching: { () -> PostMO in
@@ -78,6 +112,10 @@ public class PostLocalProvider: LocalProvider, PostLocalProviderProtocol {
             .mapError { LocalProviderError.persistenceFailure($0 as NSError) }
     }
     
+    /// Saves or updates a list of posts.
+    ///
+    /// - parameters:
+    ///   - posts: The posts to save or update.
     public func save(posts: [Post]) -> SignalProducer<[Post], LocalProviderError> {
         return SignalProducer<[PostMO], Error> { () -> Result<[PostMO], Error> in
             return Result<[PostMO], Error>(catching: { () -> [PostMO] in
@@ -107,6 +145,7 @@ public class PostLocalProvider: LocalProvider, PostLocalProviderProtocol {
         
     }
     
+    /// Removes all posts.
     public func dropAll() -> SignalProducer<Void, LocalProviderError> {
         return SignalProducer<Void, Error> { () -> Result<Void, Error> in
             return Result<Void, Error>.init(catching: {

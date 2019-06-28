@@ -10,6 +10,7 @@ import Alamofire
 import BabylonCommon
 import ReactiveSwift
 
+/// Abstraction layer for network requests.
 public protocol Network {
     func data(from request: URLRequest) -> SignalProducer<Data, RemoteProviderError>
 }

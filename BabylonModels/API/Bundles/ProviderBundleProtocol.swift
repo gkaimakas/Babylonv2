@@ -8,12 +8,17 @@
 
 import Foundation
 
+/// Since the project relies on multiple providers for data fetching, it is best
+/// to not polute the initializer with many arguments.
+/// `ProviderBundleProtocol` bundles all providers in the app so the user only
+/// supplies on argument instead of 3.
 public protocol ProviderBundleProtocol {
     var comment: CommentProviderProtocol { get }
     var post: PostProviderProtocol { get }
     var user: UserProviderProtocol { get }
 }
 
+/// Default implementation of `ProviderBundleProtocol`.
 public final class ProviderBundle: ProviderBundleProtocol {
     public let comment: CommentProviderProtocol
     public let post: PostProviderProtocol

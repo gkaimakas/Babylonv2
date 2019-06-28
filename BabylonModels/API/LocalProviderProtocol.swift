@@ -10,11 +10,12 @@ import Alamofire
 import BabylonCommon
 import ReactiveSwift
 
+/// Common abstraction layer for all local provider protocols.
 public protocol LocalProviderProtocol: class {
     init(container: DataContainer)
 }
 
-
+/// Base implementation of `LocalProviderProtocol`.
 public class LocalProvider: LocalProviderProtocol {
     public let container: DataContainer
     

@@ -12,17 +12,22 @@ import BabylonCommon
 import ReactiveSwift
 
 public protocol CommentRemoteProviderProtocol: RemoteProvider {
-    func fetchComment(id: Int) -> SignalProducer<Comment, RemoteProviderError>
+    
+    /// Fetches a list of comments for the post with `postId` from the backend.
+    ///
+    ///
+    /// - parameters:
+    ///   - postId: The id of the post the comments are attached.
     func fetchComments(postId: Int) -> SignalProducer<[Comment], RemoteProviderError>
 }
 
 public final class CommentRemoteProvider: RemoteProvider, CommentRemoteProviderProtocol {
-    public func fetchComment(id: Int) -> SignalProducer<Comment, RemoteProviderError> {
-        return network
-            .data(from: try! CommentRouter.fetchComment(id: id).asURLRequest())
-            .decode(Comment.self)
-    }
     
+    /// Fetches a list of comments for the post with `postId` from the backend.
+    ///
+    ///
+    /// - parameters:
+    ///   - postId: The id of the post the comments are attached.
     public func fetchComments(postId: Int) -> SignalProducer<[Comment], RemoteProviderError> {
         return network
             .data(from: try! CommentRouter.fetchComments(postId: postId).asURLRequest())

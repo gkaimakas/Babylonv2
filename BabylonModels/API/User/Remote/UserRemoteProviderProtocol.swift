@@ -10,10 +10,18 @@ import BabylonCommon
 import ReactiveSwift
 
 public protocol UserRemoteProviderProtocol {
+    /// Fetches a user by the id from the backend.
+    ///
+    /// - parameters:
+    ///   - id: The id of the user to fetch.
     func fetchUser(id: Int) -> SignalProducer<User, RemoteProviderError>
 }
 
 public class UserRemoteProvider: RemoteProvider, UserRemoteProviderProtocol {
+    /// Fetches a user by the id from the backend.
+    ///
+    /// - parameters:
+    ///   - id: The id of the user to fetch.
     public func fetchUser(id: Int) -> SignalProducer<User, RemoteProviderError> {
         return network
             .data(from: try! UserRouter.fetchUser(id: id).asURLRequest())
