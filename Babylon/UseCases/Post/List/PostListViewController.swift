@@ -67,9 +67,14 @@ class PostListViewController: UIViewController {
         bindDataSource()
         bindInfiniteScrolling()
         
+        viewModel
+            .posts
+            .producer
+            .startWithValues { print($0.count) }
+        
         reactive.lifetime += viewModel
             .fetchPosts
-            .apply(.remote)
+            .apply(.conditional({ $0.count == 0}))
             .start()
     }
     
@@ -79,7 +84,7 @@ class PostListViewController: UIViewController {
     }
     
     func bindDataSource() {
-        reactive.lifetime += dataSource.reactive.reload(with: .automatic) <~ viewModel
+        reactive.lifetime += dataSource.reactive.reload(with: .bottom) <~ viewModel
             .posts
             .producer
             .observe(on: UIScheduler())
@@ -94,13 +99,12 @@ class PostListViewController: UIViewController {
     func bindInfiniteScrolling() {
         reactive.lifetime += viewModel.fetchPosts.bindingTarget <~ presenter
             .willDisplayRow
-            .map { $0.row }
-            .filterMap { [weak self] row -> Bool? in
-                return self?.dataSource.isLast(row: row, at: 0)
+            .map { $0.index.section }
+            .filterMap { [weak self] section -> Bool? in
+                return self?.dataSource.numberOfSections() == section + 5
             }
             .filter { $0 }
-            .skipRepeats()
-            .map { _ in .remote }
+            .map { _ in .conditional({ $0.count == 0}) }
     }
 }
 

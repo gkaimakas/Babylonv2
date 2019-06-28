@@ -73,5 +73,8 @@ extension PostViewModel: Hashable {
     public func hash(into hasher: inout Hasher) {
 
         hasher.combine(id.value)
+        hasher.combine(title.value)
+        hasher.combine(body.value)
+        hasher.combine(user.id.value)
     }
 }

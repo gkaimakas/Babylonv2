@@ -12,6 +12,7 @@ import UIKit
 
 open class TableViewDataPresenter<Section, Row>: NSObject, UITableViewDataSource, UITableViewDelegate where Section: Differentiable, Row: Differentiable {
     public typealias WillDisplayRowEvent = (cell: UITableViewCell, index: IndexPath, row: Row)
+    public typealias WillDisplayFooterViewEvent = (view: UIView, section: Int, section: Section)
     public typealias DidSelectRowEvent = (index: IndexPath, row: Row)
     
     unowned public var tableView: UITableView
@@ -19,6 +20,9 @@ open class TableViewDataPresenter<Section, Row>: NSObject, UITableViewDataSource
     
     let willDisplayRowObserver: Signal<WillDisplayRowEvent, Never>.Observer
     public let willDisplayRow: Signal<WillDisplayRowEvent, Never>
+    
+    let willDisplayFooterViewObserver: Signal<WillDisplayFooterViewEvent, Never>.Observer
+    public let willDisplayFooterView: Signal<WillDisplayFooterViewEvent, Never>
     
     let didSelectRowObserver: Signal<DidSelectRowEvent, Never>.Observer
     public let didSelectRow: Signal<DidSelectRowEvent, Never>
@@ -28,6 +32,7 @@ open class TableViewDataPresenter<Section, Row>: NSObject, UITableViewDataSource
         self.dataSource = dataSource
         
         (willDisplayRow, willDisplayRowObserver) = Signal.pipe()
+        (willDisplayFooterView, willDisplayFooterViewObserver) = Signal.pipe()
         (didSelectRow, didSelectRowObserver) = Signal.pipe()
         
         super.init()
@@ -50,6 +55,10 @@ open class TableViewDataPresenter<Section, Row>: NSObject, UITableViewDataSource
     
     open func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         willDisplayRowObserver.send(value: (cell: cell, index: indexPath, row: dataSource.value(atIndexPath: indexPath)))
+    }
+    
+    open func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
+        willDisplayFooterViewObserver.send(value: (view, section, dataSource.value(forSection: section)))
     }
     
     open func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {

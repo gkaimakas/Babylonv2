@@ -24,7 +24,9 @@ public class PostListViewModel {
     
     public init(providerBundle: ProviderBundleProtocol) {
         _posts = MutableProperty([])
-        posts = Property(_posts)
+        posts = _posts
+            .map { Array(Set<PostViewModel>($0)) }
+            .map { $0.sorted(by: { $0.id.value < $1.id.value }) }
         
         page = _posts
             .map { ceil(Double($0.count)/Double(PostListViewModel.limit)) }
@@ -48,9 +50,9 @@ public class PostListViewModel {
                 .flatMap(.concat) { post in
                     return providerBundle
                         .user
-                        .fetchUser(id: post.userId,
-                                   strategy: userStrategy)
-                        .map { (post: post, user: $0.value) }
+                        .fetchUser(id: post.userId,strategy: .conditional { $0 == nil })
+                        .filterMap { $0.value }
+                        .map { (post: post, user: $0) }
                 }
                 .map { PostViewModel(post: $0.post, user: $0.user, providerBundle: providerBundle) }
                 .collect()
@@ -67,9 +69,9 @@ public class PostListViewModel {
                 .flatMap(.concat) { post in
                     return providerBundle
                         .user
-                        .fetchUser(id: post.userId,
-                                   strategy: .remote)
-                        .map { (post: post, user: $0.value) }
+                        .fetchUser(id: post.userId,strategy: .conditional { $0 == nil })
+                        .filterMap { $0.value }
+                        .map { (post: post, user: $0) }
                 }
                 .map { PostViewModel(post: $0.post, user: $0.user, providerBundle: providerBundle) }
                 .collect()

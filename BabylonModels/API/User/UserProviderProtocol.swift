@@ -11,7 +11,7 @@ import BabylonCommon
 import ReactiveSwift
 
 public protocol UserProviderProtocol: class {
-    func fetchUser(id: Int, strategy: FetchStrategy<User>) -> SignalProducer<FetchResult<User>, ProviderError>
+    func fetchUser(id: Int, strategy: FetchStrategy<User?>) -> SignalProducer<FetchResult<User?>, ProviderError>
 }
 
 public final class UserProvider: UserProviderProtocol {
@@ -26,7 +26,7 @@ public final class UserProvider: UserProviderProtocol {
         self.local = local
     }
     
-    public func fetchUser(id: Int, strategy: FetchStrategy<User>) -> SignalProducer<FetchResult<User>, ProviderError> {
+    public func fetchUser(id: Int, strategy: FetchStrategy<User?>) -> SignalProducer<FetchResult<User?>, ProviderError> {
         switch strategy {
         case .local:
             return local
@@ -53,7 +53,7 @@ public final class UserProvider: UserProviderProtocol {
             
         case .conditional(let remoteFetch):
             return fetchUser(id: id, strategy: .local)
-                .flatMap(.latest) { result -> SignalProducer<FetchResult<User>, ProviderError> in
+                .flatMap(.latest) { result -> SignalProducer<FetchResult<User?>, ProviderError> in
                     if remoteFetch(result.value) {
                         return self.fetchUser(id: id, strategy: .remote)
                     }

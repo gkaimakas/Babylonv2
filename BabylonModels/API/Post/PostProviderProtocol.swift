@@ -85,8 +85,8 @@ public final class PostProvider: PostProviderProtocol {
             
         case .merge:
             return SignalProducer.merge(
-                fetchPosts(page: page, limit: limit, strategy: .local),
-                fetchPosts(page: page, limit: limit, strategy: .remote)
+                fetchPosts(page: page, limit: limit, strategy: .local).prefix(value: FetchResult<[Post]>.local([])),
+                fetchPosts(page: page, limit: limit, strategy: .remote).prefix(value: FetchResult<[Post]>.remote([]))
             )
             
         case .conditional(let remoteFetch):

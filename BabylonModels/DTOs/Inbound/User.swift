@@ -39,7 +39,11 @@ public struct User {
 }
 
 extension User {
-    init(_ mo: UserMO) {
+    init?(_ mo: UserMO?) {
+        guard let mo = mo else {
+            return nil
+        }
+        
         self.id = Int(mo.id)
         self.name = mo.name
         self.username = mo.username

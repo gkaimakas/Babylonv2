@@ -45,10 +45,11 @@ public class PostLocalProvider: LocalProvider, PostLocalProviderProtocol {
             return Result<[PostMO], Error>(catching: { () -> [PostMO] in
                 return try self.container
                     .fetchObjects(type: PostMO.self,
-                                  request: PostMO.requestFetchPagedPosts(page: page, limit: limit))
+                                  request: PostMO.requestFetchPagedPosts(page: page-1, limit: limit))
             })}
             .mapError { LocalProviderError.persistenceFailure($0 as NSError) }
             .map { $0.map { Post($0) } }
+            .on(value: { print("local", $0.count) })
     }
     
     public func save(post: Post) -> SignalProducer<Post, LocalProviderError> {

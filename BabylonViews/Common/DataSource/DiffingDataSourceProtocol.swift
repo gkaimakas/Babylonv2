@@ -85,7 +85,7 @@ public class DiffingDataSource<Section: Differentiable, Value: Differentiable>: 
         guard let lastElement = innerData.value[section].elements.last else {
             return false
         }
-        
+        print(lastElement.differenceIdentifier)
         return lastElement.isContentEqual(to: row)
     }
 }

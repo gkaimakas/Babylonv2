@@ -12,13 +12,13 @@ import BabylonCommon
 import ReactiveSwift
 
 public protocol UserLocalProviderProtocol {
-    func fetchUser(id: Int) -> SignalProducer<User, LocalProviderError>
+    func fetchUser(id: Int) -> SignalProducer<User?, LocalProviderError>
     func save(user: User) -> SignalProducer<User, LocalProviderError>
     func dropAll() -> SignalProducer<Void, LocalProviderError>
 }
 
 public final class UserLocalProvider: LocalProvider, UserLocalProviderProtocol {
-    public func fetchUser(id: Int) -> SignalProducer<User, LocalProviderError> {
+    public func fetchUser(id: Int) -> SignalProducer<User?, LocalProviderError> {
         
         return SignalProducer<UserMO?, Error> { () -> Result<UserMO?, Error> in
             return Result<UserMO?, Error>(catching: { () -> UserMO? in
@@ -28,13 +28,6 @@ public final class UserLocalProvider: LocalProvider, UserLocalProviderProtocol {
                     .first
             })}
             .mapError { .persistenceFailure($0 as NSError) }
-            .flatMap(.latest) { value -> SignalProducer<UserMO, LocalProviderError> in
-                guard let value = value else {
-                    return SignalProducer<UserMO, LocalProviderError>(error: .notFound)
-                }
-                
-                return SignalProducer<UserMO, LocalProviderError>(value: value)
-            }
             .map { User($0) }
     }
     
@@ -56,7 +49,7 @@ public final class UserLocalProvider: LocalProvider, UserLocalProviderProtocol {
                 existing.inflate(user: user)
                 return existing
             })}
-            .map { User($0) }
+            .filterMap { User($0) }
             .mapError { LocalProviderError.persistenceFailure($0 as NSError) }
     }
     
