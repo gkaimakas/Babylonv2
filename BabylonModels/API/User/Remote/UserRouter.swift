@@ -29,7 +29,7 @@ extension UserRouter: URLRequestConvertible {
             
         case .fetchUser(let id):
             return (
-                path: "http://jsonplaceholder.typicode.com/users/\(id)",
+                path: "https://jsonplaceholder.typicode.com/users/\(id)",
                 parameters: nil
             )
         }

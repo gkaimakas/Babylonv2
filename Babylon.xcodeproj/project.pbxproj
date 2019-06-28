@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13B30FC522C5FFF000FDDF21 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FC422C5FFF000FDDF21 /* UIApplication.swift */; };
+		13B30FC922C6020800FDDF21 /* DiffingDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FC822C6020800FDDF21 /* DiffingDataSourceProtocol.swift */; };
+		13B30FCB22C6026000FDDF21 /* UITableViewDiffingDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FCA22C6026000FDDF21 /* UITableViewDiffingDataSourceProtocol.swift */; };
+		13B30FCF22C602C500FDDF21 /* PostListViewController+Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FCE22C602C500FDDF21 /* PostListViewController+Destination.swift */; };
+		13B30FD122C6030200FDDF21 /* PostListViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FD022C6030200FDDF21 /* PostListViewController+Row.swift */; };
+		13B30FD322C603F800FDDF21 /* PostListViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FD222C603F800FDDF21 /* PostListViewController+Section.swift */; };
+		13B30FD522C6052200FDDF21 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FD422C6052200FDDF21 /* Action.swift */; };
+		13B30FD722C6073600FDDF21 /* TableViewDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FD622C6073600FDDF21 /* TableViewDataPresenter.swift */; };
+		13B30FD922C608A600FDDF21 /* PostListViewController+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FD822C608A600FDDF21 /* PostListViewController+Presenter.swift */; };
+		13B30FDC22C6097100FDDF21 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FDB22C6097100FDDF21 /* UITableViewCell.swift */; };
+		13B30FDF22C60F1E00FDDF21 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FDE22C60F1E00FDDF21 /* PostTableViewCell.swift */; };
 		13CA3C6C22C5292E000F6D37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3C6B22C5292E000F6D37 /* AppDelegate.swift */; };
-		13CA3C6E22C5292E000F6D37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3C6D22C5292E000F6D37 /* ViewController.swift */; };
+		13CA3C6E22C5292E000F6D37 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3C6D22C5292E000F6D37 /* PostListViewController.swift */; };
 		13CA3C7122C5292E000F6D37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CA3C6F22C5292E000F6D37 /* Main.storyboard */; };
 		13CA3C7422C5292E000F6D37 /* Babylon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3C7222C5292E000F6D37 /* Babylon.xcdatamodeld */; };
 		13CA3C7622C5292F000F6D37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13CA3C7522C5292F000F6D37 /* Assets.xcassets */; };
@@ -251,9 +262,20 @@
 /* Begin PBXFileReference section */
 		0491C63E2AEBA7B310A4DBD1 /* Pods_BabylonViewModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabylonViewModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9A1694FB740BAC2F2BD9D7 /* Pods-BabylonModelsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonModelsTests.release.xcconfig"; path = "Target Support Files/Pods-BabylonModelsTests/Pods-BabylonModelsTests.release.xcconfig"; sourceTree = "<group>"; };
+		13B30FC422C5FFF000FDDF21 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		13B30FC822C6020800FDDF21 /* DiffingDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffingDataSourceProtocol.swift; sourceTree = "<group>"; };
+		13B30FCA22C6026000FDDF21 /* UITableViewDiffingDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewDiffingDataSourceProtocol.swift; sourceTree = "<group>"; };
+		13B30FCE22C602C500FDDF21 /* PostListViewController+Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostListViewController+Destination.swift"; sourceTree = "<group>"; };
+		13B30FD022C6030200FDDF21 /* PostListViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostListViewController+Row.swift"; sourceTree = "<group>"; };
+		13B30FD222C603F800FDDF21 /* PostListViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostListViewController+Section.swift"; sourceTree = "<group>"; };
+		13B30FD422C6052200FDDF21 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		13B30FD622C6073600FDDF21 /* TableViewDataPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataPresenter.swift; sourceTree = "<group>"; };
+		13B30FD822C608A600FDDF21 /* PostListViewController+Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostListViewController+Presenter.swift"; sourceTree = "<group>"; };
+		13B30FDB22C6097100FDDF21 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		13B30FDE22C60F1E00FDDF21 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		13CA3C6822C5292E000F6D37 /* Babylon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Babylon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CA3C6B22C5292E000F6D37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		13CA3C6D22C5292E000F6D37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13CA3C6D22C5292E000F6D37 /* PostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
 		13CA3C7022C5292E000F6D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13CA3C7322C5292E000F6D37 /* Babylon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Babylon.xcdatamodel; sourceTree = "<group>"; };
 		13CA3C7522C5292F000F6D37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -469,6 +491,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13B30FC222C5FFC900FDDF21 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13B30FC422C5FFF000FDDF21 /* UIApplication.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		13B30FC322C5FFD600FDDF21 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				13B30FCC22C6028D00FDDF21 /* Post */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		13B30FC622C601AD00FDDF21 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				13B30FC722C601B400FDDF21 /* DataSource */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		13B30FC722C601B400FDDF21 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				13B30FC822C6020800FDDF21 /* DiffingDataSourceProtocol.swift */,
+				13B30FCA22C6026000FDDF21 /* UITableViewDiffingDataSourceProtocol.swift */,
+				13B30FD622C6073600FDDF21 /* TableViewDataPresenter.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		13B30FCC22C6028D00FDDF21 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				13B30FCD22C6029D00FDDF21 /* List */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		13B30FCD22C6029D00FDDF21 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				13CA3C6D22C5292E000F6D37 /* PostListViewController.swift */,
+				13B30FD822C608A600FDDF21 /* PostListViewController+Presenter.swift */,
+				13B30FD222C603F800FDDF21 /* PostListViewController+Section.swift */,
+				13B30FD022C6030200FDDF21 /* PostListViewController+Row.swift */,
+				13B30FCE22C602C500FDDF21 /* PostListViewController+Destination.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		13B30FDA22C6096700FDDF21 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				13B30FDB22C6097100FDDF21 /* UITableViewCell.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		13B30FDD22C60F0E00FDDF21 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				13B30FDE22C60F1E00FDDF21 /* PostTableViewCell.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
 		13CA3C5F22C5292E000F6D37 = {
 			isa = PBXGroup;
 			children = (
@@ -506,7 +598,8 @@
 			isa = PBXGroup;
 			children = (
 				13CA3C6B22C5292E000F6D37 /* AppDelegate.swift */,
-				13CA3C6D22C5292E000F6D37 /* ViewController.swift */,
+				13B30FC322C5FFD600FDDF21 /* UseCases */,
+				13B30FC222C5FFC900FDDF21 /* Extensions */,
 				13CA3C6F22C5292E000F6D37 /* Main.storyboard */,
 				13CA3C7522C5292F000F6D37 /* Assets.xcassets */,
 				13CA3C7722C5292F000F6D37 /* LaunchScreen.storyboard */,
@@ -537,10 +630,10 @@
 		13CA3CA222C52941000F6D37 /* BabylonCommon */ = {
 			isa = PBXGroup;
 			children = (
-				13CA3D5322C532B3000F6D37 /* Extensions */,
-				13CA3D3522C52D51000F6D37 /* Errors */,
 				13CA3CA322C52941000F6D37 /* BabylonCommon.h */,
 				13CA3CA422C52941000F6D37 /* Info.plist */,
+				13CA3D5322C532B3000F6D37 /* Extensions */,
+				13CA3D3522C52D51000F6D37 /* Errors */,
 				13CA3D7422C53F34000F6D37 /* FetchStrategy.swift */,
 				13CA3D7622C53F99000F6D37 /* FetchResult.swift */,
 			);
@@ -559,8 +652,8 @@
 		13CA3CC522C5294E000F6D37 /* BabylonModels */ = {
 			isa = PBXGroup;
 			children = (
-				13CA3CC722C5294E000F6D37 /* Info.plist */,
 				13CA3CC622C5294E000F6D37 /* BabylonModels.h */,
+				13CA3CC722C5294E000F6D37 /* Info.plist */,
 				13CA3D4A22C53101000F6D37 /* API */,
 				13CA3D3C22C52E7F000F6D37 /* DTOs */,
 				13CA3D5622C5354B000F6D37 /* Extensions */,
@@ -581,12 +674,12 @@
 		13CA3CE722C5295E000F6D37 /* BabylonViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				13CA3CE822C5295E000F6D37 /* BabylonViewModels.h */,
+				13CA3CE922C5295E000F6D37 /* Info.plist */,
 				13CA3DA122C57346000F6D37 /* PostListViewModel.swift */,
 				13CA3D9F22C570DB000F6D37 /* PostViewModel.swift */,
 				13CA3D9322C56EE0000F6D37 /* CommentViewModel.swift */,
 				13CA3D9D22C570AF000F6D37 /* User */,
-				13CA3CE822C5295E000F6D37 /* BabylonViewModels.h */,
-				13CA3CE922C5295E000F6D37 /* Info.plist */,
 			);
 			path = BabylonViewModels;
 			sourceTree = "<group>";
@@ -603,6 +696,9 @@
 		13CA3D0922C52973000F6D37 /* BabylonViews */ = {
 			isa = PBXGroup;
 			children = (
+				13B30FDD22C60F0E00FDDF21 /* Post */,
+				13B30FDA22C6096700FDDF21 /* Extension */,
+				13B30FC622C601AD00FDDF21 /* Common */,
 				13CA3D0A22C52973000F6D37 /* BabylonViews.h */,
 				13CA3D0B22C52973000F6D37 /* Info.plist */,
 			);
@@ -700,6 +796,7 @@
 			isa = PBXGroup;
 			children = (
 				13CA3D5422C532BC000F6D37 /* Signal.swift */,
+				13B30FD422C6052200FDDF21 /* Action.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1185,6 +1282,7 @@
 					};
 					13CA3D0722C52973000F6D37 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					13CA3D0F22C52973000F6D37 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -1570,7 +1668,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13CA3C6E22C5292E000F6D37 /* ViewController.swift in Sources */,
+				13B30FC522C5FFF000FDDF21 /* UIApplication.swift in Sources */,
+				13B30FD322C603F800FDDF21 /* PostListViewController+Section.swift in Sources */,
+				13B30FCF22C602C500FDDF21 /* PostListViewController+Destination.swift in Sources */,
+				13B30FD122C6030200FDDF21 /* PostListViewController+Row.swift in Sources */,
+				13CA3C6E22C5292E000F6D37 /* PostListViewController.swift in Sources */,
+				13B30FD922C608A600FDDF21 /* PostListViewController+Presenter.swift in Sources */,
 				13CA3C6C22C5292E000F6D37 /* AppDelegate.swift in Sources */,
 				13CA3C7422C5292E000F6D37 /* Babylon.xcdatamodeld in Sources */,
 			);
@@ -1600,6 +1703,7 @@
 				13CA3D5522C532BC000F6D37 /* Signal.swift in Sources */,
 				13CA3D7522C53F34000F6D37 /* FetchStrategy.swift in Sources */,
 				13CA3D3922C52D61000F6D37 /* LocalProviderError.swift in Sources */,
+				13B30FD522C6052200FDDF21 /* Action.swift in Sources */,
 				13CA3D3B22C52D69000F6D37 /* RemoteProviderError.swift in Sources */,
 				13CA3D7722C53F99000F6D37 /* FetchResult.swift in Sources */,
 			);
@@ -1683,6 +1787,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B30FCB22C6026000FDDF21 /* UITableViewDiffingDataSourceProtocol.swift in Sources */,
+				13B30FDC22C6097100FDDF21 /* UITableViewCell.swift in Sources */,
+				13B30FDF22C60F1E00FDDF21 /* PostTableViewCell.swift in Sources */,
+				13B30FD722C6073600FDDF21 /* TableViewDataPresenter.swift in Sources */,
+				13B30FC922C6020800FDDF21 /* DiffingDataSourceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2369,6 +2478,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AF3E684BF35F43C3F663E9E /* Pods-BabylonViews.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -2387,6 +2497,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gkaimakas.BabylonViews;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2398,6 +2509,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2EEC2ED138F847F27DFE18BF /* Pods-BabylonViews.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

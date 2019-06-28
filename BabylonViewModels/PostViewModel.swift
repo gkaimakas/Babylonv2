@@ -10,7 +10,7 @@ import BabylonModels
 import BabylonCommon
 import ReactiveSwift
 
-public class PostViewModel: NSObject {
+public class PostViewModel {
     private let _comments: MutableProperty<[CommentViewModel]>
     
     public let id: Property<Int>
@@ -19,6 +19,7 @@ public class PostViewModel: NSObject {
     public let user: UserViewModel
     
     public let comments: Property<[CommentViewModel]>
+    
     public let fetchComments: Action<FetchStrategy<[Comment]>, [CommentViewModel], ProviderError>
     public let forceFetchComments: Action<Void, [CommentViewModel], ProviderError>
     
@@ -51,8 +52,6 @@ public class PostViewModel: NSObject {
                 .map { $0.value.map { CommentViewModel(comment: $0) } }
         }
         
-        super.init()
-        
         bind()
     }
     
@@ -61,5 +60,18 @@ public class PostViewModel: NSObject {
             fetchComments.values,
             forceFetchComments.values
         )
+    }
+}
+
+extension PostViewModel: Equatable {
+    public static func ==(lhs: PostViewModel, rhs: PostViewModel) -> Bool {
+        return lhs.id.value == rhs.id.value
+    }
+}
+
+extension PostViewModel: Hashable {
+    public func hash(into hasher: inout Hasher) {
+
+        hasher.combine(id.value)
     }
 }

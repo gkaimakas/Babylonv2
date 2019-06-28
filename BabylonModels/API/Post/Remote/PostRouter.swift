@@ -32,7 +32,7 @@ extension PostRouter: URLRequestConvertible {
         switch self {
         case .fetchPosts(let page, let limit):
             return (
-                path: "http://jsonplaceholder.typicode.com/posts",
+                path: "https://jsonplaceholder.typicode.com/posts",
                 parameters: [
                     "_page": page as AnyObject,
                     "_limit": limit as AnyObject
@@ -41,7 +41,7 @@ extension PostRouter: URLRequestConvertible {
             
         case .fetchPost(let id):
             return (
-                path: "http://jsonplaceholder.typicode.com/posts/\(id)",
+                path: "https://jsonplaceholder.typicode.com/posts/\(id)",
                 parameters: nil
             )
         }
