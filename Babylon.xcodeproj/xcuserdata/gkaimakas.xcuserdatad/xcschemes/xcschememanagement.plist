@@ -9,26 +9,6 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>BabylonCommon.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>18</integer>
-		</dict>
-		<key>BabylonModels.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>19</integer>
-		</dict>
-		<key>BabylonViewModels.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>20</integer>
-		</dict>
-		<key>BabylonViews.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>21</integer>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -47,7 +27,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>13CA3CA022C52941000F6D37</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>13CA3CA822C52941000F6D37</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>13CA3CC322C5294E000F6D37</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,7 +47,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>13CA3CE522C5295E000F6D37</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>13CA3CED22C5295E000F6D37</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>13CA3D0722C52973000F6D37</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -6,6 +6,8 @@ PODS:
   - DifferenceKit/Core (1.1.2)
   - DifferenceKit/UIKitExtension (1.1.2):
     - DifferenceKit/Core
+  - Nimble (8.0.1)
+  - Quick (2.1.0)
   - ReactiveCocoa (10.0.0):
     - ReactiveSwift (~> 6.0)
   - ReactiveSwift (6.0.0)
@@ -15,6 +17,8 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - DifferenceKit
+  - Nimble
+  - Quick
   - ReactiveCocoa
   - ReactiveSwift
   - SnapKit
@@ -24,6 +28,8 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - DifferenceKit
+    - Nimble
+    - Quick
     - ReactiveCocoa
     - ReactiveSwift
     - SnapKit
@@ -32,11 +38,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   DifferenceKit: 3a1cff9ac9a9cdf2a3f205671067797e83c3f066
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   ReactiveCocoa: 6d4c37ba236f5d9a7a55b2172cd09f19ba85f574
   ReactiveSwift: 24b7ed245617bbfd30ee0c87779b6c64ac1b4518
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
 
-PODFILE CHECKSUM: 02056d9745047831079db578b1e968d3f397df11
+PODFILE CHECKSUM: febe26bfb133581d62b63050c0393baeb42ab908
 
 COCOAPODS: 1.7.2

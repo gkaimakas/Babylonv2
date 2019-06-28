@@ -24,6 +24,23 @@
 		13B30FE822C62BFA00FDDF21 /* PostDetailsViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FE722C62BFA00FDDF21 /* PostDetailsViewController+Section.swift */; };
 		13B30FEA22C62C0600FDDF21 /* PostDetailsViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FE922C62C0600FDDF21 /* PostDetailsViewController+Row.swift */; };
 		13B30FED22C630CE00FDDF21 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FEC22C630CE00FDDF21 /* CommentTableViewCell.swift */; };
+		13B30FF122C63D1D00FDDF21 /* UserLocalProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FF022C63D1D00FDDF21 /* UserLocalProviderSpec.swift */; };
+		13B30FF222C63EFC00FDDF21 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13CA3C9022C5292F000F6D37 /* Info.plist */; };
+		13B30FF322C63F0700FDDF21 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13CA3C8522C5292F000F6D37 /* Info.plist */; };
+		13B30FF422C63F1200FDDF21 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13CA3CB222C52941000F6D37 /* Info.plist */; };
+		13B30FF522C63F1800FDDF21 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13CA3CD522C5294E000F6D37 /* Info.plist */; };
+		13B30FF622C63F1F00FDDF21 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13CA3CF722C5295E000F6D37 /* Info.plist */; };
+		13B30FF722C63F2600FDDF21 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13CA3D1922C52973000F6D37 /* Info.plist */; };
+		13B30FFA22C6406300FDDF21 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FF922C6406300FDDF21 /* User.swift */; };
+		13B30FFC22C640FF00FDDF21 /* UserRemoteProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FFB22C640FF00FDDF21 /* UserRemoteProviderSpec.swift */; };
+		13B30FFE22C6413200FDDF21 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B30FFD22C6413200FDDF21 /* Network.swift */; };
+		13B3100122C641C700FDDF21 /* MockAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3100022C641C700FDDF21 /* MockAction.swift */; };
+		13B3100222C6426A00FDDF21 /* MockAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3100022C641C700FDDF21 /* MockAction.swift */; };
+		13B3100322C6426B00FDDF21 /* MockAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3100022C641C700FDDF21 /* MockAction.swift */; };
+		13B3100422C6426C00FDDF21 /* MockAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3100022C641C700FDDF21 /* MockAction.swift */; };
+		13B3100522C6426D00FDDF21 /* MockAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3100022C641C700FDDF21 /* MockAction.swift */; };
+		13B3100622C6426E00FDDF21 /* MockAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B3100022C641C700FDDF21 /* MockAction.swift */; };
+		13B3100822C6458600FDDF21 /* Response.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B3100722C6458600FDDF21 /* Response.xcassets */; };
 		13CA3C6C22C5292E000F6D37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3C6B22C5292E000F6D37 /* AppDelegate.swift */; };
 		13CA3C6E22C5292E000F6D37 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3C6D22C5292E000F6D37 /* PostListViewController.swift */; };
 		13CA3C7122C5292E000F6D37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CA3C6F22C5292E000F6D37 /* Main.storyboard */; };
@@ -38,7 +55,6 @@
 		13CA3CB622C52941000F6D37 /* BabylonCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CA122C52941000F6D37 /* BabylonCommon.framework */; };
 		13CA3CB722C52941000F6D37 /* BabylonCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CA122C52941000F6D37 /* BabylonCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13CA3CCD22C5294E000F6D37 /* BabylonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CC422C5294E000F6D37 /* BabylonModels.framework */; };
-		13CA3CD422C5294E000F6D37 /* BabylonModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA3CD322C5294E000F6D37 /* BabylonModelsTests.swift */; };
 		13CA3CD622C5294E000F6D37 /* BabylonModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CA3CC622C5294E000F6D37 /* BabylonModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13CA3CD922C5294E000F6D37 /* BabylonModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CC422C5294E000F6D37 /* BabylonModels.framework */; };
 		13CA3CDA22C5294E000F6D37 /* BabylonModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 13CA3CC422C5294E000F6D37 /* BabylonModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -285,6 +301,12 @@
 		13B30FE722C62BFA00FDDF21 /* PostDetailsViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostDetailsViewController+Section.swift"; sourceTree = "<group>"; };
 		13B30FE922C62C0600FDDF21 /* PostDetailsViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostDetailsViewController+Row.swift"; sourceTree = "<group>"; };
 		13B30FEC22C630CE00FDDF21 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		13B30FF022C63D1D00FDDF21 /* UserLocalProviderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalProviderSpec.swift; sourceTree = "<group>"; };
+		13B30FF922C6406300FDDF21 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		13B30FFB22C640FF00FDDF21 /* UserRemoteProviderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRemoteProviderSpec.swift; sourceTree = "<group>"; };
+		13B30FFD22C6413200FDDF21 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		13B3100022C641C700FDDF21 /* MockAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAction.swift; sourceTree = "<group>"; };
+		13B3100722C6458600FDDF21 /* Response.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Response.xcassets; sourceTree = "<group>"; };
 		13CA3C6822C5292E000F6D37 /* Babylon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Babylon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CA3C6B22C5292E000F6D37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13CA3C6D22C5292E000F6D37 /* PostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
@@ -309,7 +331,6 @@
 		13CA3CC622C5294E000F6D37 /* BabylonModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BabylonModels.h; sourceTree = "<group>"; };
 		13CA3CC722C5294E000F6D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13CA3CCC22C5294E000F6D37 /* BabylonModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabylonModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		13CA3CD322C5294E000F6D37 /* BabylonModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabylonModelsTests.swift; sourceTree = "<group>"; };
 		13CA3CD522C5294E000F6D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13CA3CE622C5295E000F6D37 /* BabylonViewModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BabylonViewModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CA3CE822C5295E000F6D37 /* BabylonViewModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BabylonViewModels.h; sourceTree = "<group>"; };
@@ -594,6 +615,40 @@
 			path = Comment;
 			sourceTree = "<group>";
 		};
+		13B30FEE22C63CF600FDDF21 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				13B30FEF22C63D0200FDDF21 /* User */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		13B30FEF22C63D0200FDDF21 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				13B30FF022C63D1D00FDDF21 /* UserLocalProviderSpec.swift */,
+				13B30FFB22C640FF00FDDF21 /* UserRemoteProviderSpec.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		13B30FF822C6405100FDDF21 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				13B30FF922C6406300FDDF21 /* User.swift */,
+				13B30FFD22C6413200FDDF21 /* Network.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		13B30FFF22C641BB00FDDF21 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				13B3100022C641C700FDDF21 /* MockAction.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		13CA3C5F22C5292E000F6D37 = {
 			isa = PBXGroup;
 			children = (
@@ -602,7 +657,12 @@
 				13CA3CC522C5294E000F6D37 /* BabylonModels */,
 				13CA3CE722C5295E000F6D37 /* BabylonViewModels */,
 				13CA3D0922C52973000F6D37 /* BabylonViews */,
-				13CA3D3422C52D22000F6D37 /* Tests */,
+				13CA3C8222C5292F000F6D37 /* BabylonTests */,
+				13CA3C8D22C5292F000F6D37 /* BabylonUITests */,
+				13CA3CAF22C52941000F6D37 /* BabylonCommonTests */,
+				13CA3CD222C5294E000F6D37 /* BabylonModelsTests */,
+				13CA3CF422C5295E000F6D37 /* BabylonViewModelsTests */,
+				13CA3D1622C52973000F6D37 /* BabylonViewsTests */,
 				13CA3C6922C5292E000F6D37 /* Products */,
 				4CD67A81E525645039BDDC57 /* Pods */,
 				7B758554ED71BD0291690477 /* Frameworks */,
@@ -676,6 +736,7 @@
 		13CA3CAF22C52941000F6D37 /* BabylonCommonTests */ = {
 			isa = PBXGroup;
 			children = (
+				13B30FFF22C641BB00FDDF21 /* Helpers */,
 				13CA3CB022C52941000F6D37 /* BabylonCommonTests.swift */,
 				13CA3CB222C52941000F6D37 /* Info.plist */,
 			);
@@ -698,8 +759,10 @@
 		13CA3CD222C5294E000F6D37 /* BabylonModelsTests */ = {
 			isa = PBXGroup;
 			children = (
-				13CA3CD322C5294E000F6D37 /* BabylonModelsTests.swift */,
+				13B30FF822C6405100FDDF21 /* Helpers */,
+				13B30FEE22C63CF600FDDF21 /* API */,
 				13CA3CD522C5294E000F6D37 /* Info.plist */,
+				13B3100722C6458600FDDF21 /* Response.xcassets */,
 			);
 			path = BabylonModelsTests;
 			sourceTree = "<group>";
@@ -745,20 +808,6 @@
 				13CA3D1722C52973000F6D37 /* BabylonViewsTests.swift */,
 				13CA3D1922C52973000F6D37 /* Info.plist */,
 			);
-			name = BabylonViewsTests;
-			sourceTree = "<group>";
-		};
-		13CA3D3422C52D22000F6D37 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				13CA3C8222C5292F000F6D37 /* BabylonTests */,
-				13CA3C8D22C5292F000F6D37 /* BabylonUITests */,
-				13CA3CAF22C52941000F6D37 /* BabylonCommonTests */,
-				13CA3CD222C5294E000F6D37 /* BabylonModelsTests */,
-				13CA3CF422C5295E000F6D37 /* BabylonViewModelsTests */,
-				13CA3D1622C52973000F6D37 /* BabylonViewsTests */,
-			);
-			name = Tests;
 			path = BabylonViewsTests;
 			sourceTree = "<group>";
 		};
@@ -1078,6 +1127,7 @@
 				13CA3C7B22C5292F000F6D37 /* Sources */,
 				13CA3C7C22C5292F000F6D37 /* Frameworks */,
 				13CA3C7D22C5292F000F6D37 /* Resources */,
+				9D0C8BD021851E8FB10D9C2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1097,6 +1147,7 @@
 				13CA3C8622C5292F000F6D37 /* Sources */,
 				13CA3C8722C5292F000F6D37 /* Frameworks */,
 				13CA3C8822C5292F000F6D37 /* Resources */,
+				D631FFEC32DE5463EE76D63E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1135,6 +1186,7 @@
 				13CA3CA522C52941000F6D37 /* Sources */,
 				13CA3CA622C52941000F6D37 /* Frameworks */,
 				13CA3CA722C52941000F6D37 /* Resources */,
+				5C7FAD533413DA757F47D507 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1175,6 +1227,7 @@
 				13CA3CC822C5294E000F6D37 /* Sources */,
 				13CA3CC922C5294E000F6D37 /* Frameworks */,
 				13CA3CCA22C5294E000F6D37 /* Resources */,
+				00799056DBE3A6990CB98478 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1216,6 +1269,7 @@
 				13CA3CEA22C5295E000F6D37 /* Sources */,
 				13CA3CEB22C5295E000F6D37 /* Frameworks */,
 				13CA3CEC22C5295E000F6D37 /* Resources */,
+				ED777A753B1A233B850D5005 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1257,6 +1311,7 @@
 				13CA3D0C22C52973000F6D37 /* Sources */,
 				13CA3D0D22C52973000F6D37 /* Frameworks */,
 				13CA3D0E22C52973000F6D37 /* Resources */,
+				1597893C15DC2D38B59C0B08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1367,6 +1422,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B30FF322C63F0700FDDF21 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1374,6 +1430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B30FF222C63EFC00FDDF21 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1388,6 +1445,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B30FF422C63F1200FDDF21 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1402,6 +1460,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B3100822C6458600FDDF21 /* Response.xcassets in Resources */,
+				13B30FF522C63F1800FDDF21 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1416,6 +1476,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B30FF622C63F1F00FDDF21 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1430,12 +1491,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B30FF722C63F2600FDDF21 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		00799056DBE3A6990CB98478 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabylonModelsTests/Pods-BabylonModelsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabylonModelsTests/Pods-BabylonModelsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BabylonModelsTests/Pods-BabylonModelsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0A3A26CA240B17F1CD8D7720 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1456,6 +1535,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1597893C15DC2D38B59C0B08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabylonViewsTests/Pods-BabylonViewsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabylonViewsTests/Pods-BabylonViewsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BabylonViewsTests/Pods-BabylonViewsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1A9E2ADC5D6B7835FF061DB0 /* [CP] Embed Pods Frameworks */ = {
@@ -1607,6 +1703,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5C7FAD533413DA757F47D507 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabylonCommonTests/Pods-BabylonCommonTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabylonCommonTests/Pods-BabylonCommonTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BabylonCommonTests/Pods-BabylonCommonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7CE93EC2359B6D752CA5C66A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1651,6 +1764,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9D0C8BD021851E8FB10D9C2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabylonTests/Pods-BabylonTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabylonTests/Pods-BabylonTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BabylonTests/Pods-BabylonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ABD3551B82DDB10A8C982EB0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1671,6 +1801,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D631FFEC32DE5463EE76D63E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabylonUITests/Pods-BabylonUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabylonUITests/Pods-BabylonUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BabylonUITests/Pods-BabylonUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED777A753B1A233B850D5005 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabylonViewModelsTests/Pods-BabylonViewModelsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabylonViewModelsTests/Pods-BabylonViewModelsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BabylonViewModelsTests/Pods-BabylonViewModelsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FF4E1E0A434118422CCC6E8F /* [CP] Check Pods Manifest.lock */ = {
@@ -1722,6 +1886,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13CA3C8422C5292F000F6D37 /* BabylonTests.swift in Sources */,
+				13B3100622C6426E00FDDF21 /* MockAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1730,6 +1895,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13CA3C8F22C5292F000F6D37 /* BabylonUITests.swift in Sources */,
+				13B3100522C6426D00FDDF21 /* MockAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1752,6 +1918,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13CA3CB122C52941000F6D37 /* BabylonCommonTests.swift in Sources */,
+				13B3100122C641C700FDDF21 /* MockAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1795,7 +1962,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13CA3CD422C5294E000F6D37 /* BabylonModelsTests.swift in Sources */,
+				13B30FFC22C640FF00FDDF21 /* UserRemoteProviderSpec.swift in Sources */,
+				13B30FFA22C6406300FDDF21 /* User.swift in Sources */,
+				13B30FFE22C6413200FDDF21 /* Network.swift in Sources */,
+				13B3100222C6426A00FDDF21 /* MockAction.swift in Sources */,
+				13B30FF122C63D1D00FDDF21 /* UserLocalProviderSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1818,6 +1989,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13CA3CF622C5295E000F6D37 /* BabylonViewModelsTests.swift in Sources */,
+				13B3100322C6426B00FDDF21 /* MockAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1840,6 +2012,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13CA3D1822C52973000F6D37 /* BabylonViewsTests.swift in Sources */,
+				13B3100422C6426C00FDDF21 /* MockAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2083,7 +2256,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F733009F6A491BF587DB8924 /* Pods-Babylon.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
@@ -2103,7 +2276,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7F59A7BF3192A253EE3E5D9B /* Pods-Babylon.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
@@ -2123,7 +2296,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D17C3EF8A3B0A1C293CFCA65 /* Pods-BabylonTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
@@ -2145,7 +2318,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B13219F5259637718AC43AA7 /* Pods-BabylonTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
@@ -2167,7 +2340,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B6E372E6A2AA2C9847BBFF1 /* Pods-BabylonUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = BabylonUITests/Info.plist;
@@ -2188,7 +2361,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 164678A039A0BAB866F60704 /* Pods-BabylonUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = BabylonUITests/Info.plist;
@@ -2270,7 +2443,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C43078C332E30DAD09BF7FE /* Pods-BabylonCommonTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = BabylonCommonTests/Info.plist;
@@ -2291,7 +2464,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C5D4416AF9AC2DF6707CA59C /* Pods-BabylonCommonTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = BabylonCommonTests/Info.plist;
@@ -2373,7 +2546,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7523A05D1DC37D62DEB33B3 /* Pods-BabylonModelsTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = BabylonModelsTests/Info.plist;
@@ -2394,7 +2567,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D9A1694FB740BAC2F2BD9D7 /* Pods-BabylonModelsTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = BabylonModelsTests/Info.plist;
@@ -2476,7 +2649,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4F0998C8370098F482421262 /* Pods-BabylonViewModelsTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = BabylonViewModelsTests/Info.plist;
@@ -2497,7 +2670,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B2ADBB6CD3EF5C6FD933804B /* Pods-BabylonViewModelsTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = BabylonViewModelsTests/Info.plist;
@@ -2579,7 +2752,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BD4CFEC24A893D2F7F3D28F9 /* Pods-BabylonViewsTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = BabylonViewsTests/Info.plist;
@@ -2600,7 +2773,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 51B0CC22132DC52A4302B335 /* Pods-BabylonViewsTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = BabylonViewsTests/Info.plist;

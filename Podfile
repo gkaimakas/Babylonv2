@@ -17,13 +17,16 @@ target 'Babylon' do
   target 'BabylonTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
   end
   
   target 'BabylonUITests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
   end
-  
 end
 
 target 'BabylonCommon' do
@@ -35,8 +38,9 @@ target 'BabylonCommon' do
   target 'BabylonCommonTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
   end
-  
 end
 
 target 'BabylonModels' do
@@ -48,8 +52,9 @@ target 'BabylonModels' do
   target 'BabylonModelsTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
   end
-  
 end
 
 target 'BabylonViewModels' do
@@ -60,8 +65,9 @@ target 'BabylonViewModels' do
   target 'BabylonViewModelsTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
   end
-  
 end
 
 target 'BabylonViews' do
@@ -75,6 +81,7 @@ target 'BabylonViews' do
   target 'BabylonViewsTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Quick'
+    pod 'Nimble'
   end
-  
 end
