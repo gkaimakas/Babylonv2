@@ -28,8 +28,10 @@ public struct Comment {
         self.email = email
         self.body = body
     }
-    
-    public init(_ mo: CommentMO) {
+}
+
+extension Comment {
+    init(_ mo: CommentMO) {
         postId = Int(mo.postId)
         id = Int(mo.id)
         name = mo.name

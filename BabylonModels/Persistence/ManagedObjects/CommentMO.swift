@@ -9,19 +9,19 @@
 import CoreData
 import Foundation
 
-public class CommentMO: NSManagedObject {
-    public static func requestFetchAllComments() -> NSFetchRequest<NSFetchRequestResult> {
+class CommentMO: NSManagedObject {
+    static func requestFetchAllComments() -> NSFetchRequest<NSFetchRequestResult> {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: self))
         return request
     }
 
-    public static func requestFetchComment(id: Int) -> NSFetchRequest<NSFetchRequestResult> {
+    static func requestFetchComment(id: Int) -> NSFetchRequest<NSFetchRequestResult> {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: self))
         request.predicate = NSPredicate(format: "id == \(id)")
         return request
     }
     
-    public static func requestFetchComments(postId: Int) -> NSFetchRequest<NSFetchRequestResult> {
+    static func requestFetchComments(postId: Int) -> NSFetchRequest<NSFetchRequestResult> {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: self))
         request.predicate = NSPredicate(format: "postId == \(postId)")
         return request
@@ -33,7 +33,7 @@ public class CommentMO: NSManagedObject {
     @NSManaged public var email: String?
     @NSManaged public var body: String?
     
-    public func inflate(comment: Comment) {
+    func inflate(comment: Comment) {
         self.postId = Int64(comment.postId)
         self.id = Int64(comment.id)
         self.name = comment.name

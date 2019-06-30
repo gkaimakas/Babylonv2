@@ -24,7 +24,9 @@ public struct Post {
         self.title = title
         self.body = body
     }
-    
+}
+
+extension Post {
     init(_ mo: PostMO) {
         self.id = Int(mo.id)
         self.userId = Int(mo.userId)

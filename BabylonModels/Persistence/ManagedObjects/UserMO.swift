@@ -9,13 +9,13 @@
 import CoreData
 import Foundation
 
-public class UserMO: NSManagedObject {
-    public static func requestFetchAllUsers() -> NSFetchRequest<NSFetchRequestResult> {
+class UserMO: NSManagedObject {
+    static func requestFetchAllUsers() -> NSFetchRequest<NSFetchRequestResult> {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: self))
         return request
     }
     
-    public static func requestFetchUser(id: Int) -> NSFetchRequest<NSFetchRequestResult> {
+    static func requestFetchUser(id: Int) -> NSFetchRequest<NSFetchRequestResult> {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: self))
         request.predicate = NSPredicate(format: "id == \(id)")
         return request
@@ -38,7 +38,7 @@ public class UserMO: NSManagedObject {
     @NSManaged public var company_catchPhrase: String?
     @NSManaged public var company_bs: String?
     
-    public func inflate(user: User) {
+    func inflate(user: User) {
         self.id = Int64(user.id)
         self.name = user.name
         self.username = user.username
