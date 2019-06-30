@@ -43,5 +43,30 @@ public class UserLocalRepositorySpec: QuickSpec {
                 }
             }
         }
+        
+        describe("fetchUser(id: _)") {
+            it("should fetch an existing user") {
+                let user = User.mocked()
+                var fetchedUser: User? = nil
+                
+                repo.save(user: user)
+                    .then(repo.fetchUser(id: user.id))
+                    .startWithResult({ (result) in
+                        switch result {
+                        case let .success(value):
+                            fetchedUser = value
+                        case .failure:
+                            break
+                        }
+                    })
+                
+                expect(fetchedUser).toEventuallyNot(beNil())
+                if let fetchedUser = fetchedUser {
+                    expect(fetchedUser.id).to(equal(user.id))
+                    expect(fetchedUser.name).to(equal(user.name))
+                    expect(fetchedUser.email).to(equal(user.email))
+                }
+            }
+        }
     }
 }
